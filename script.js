@@ -73,5 +73,5 @@
 // ];
 // const outputFile = 'CompiledTires.xml';
 // compileTiresToFile(inputFiles, outputFile);
-import { scrapeWithPuppeteer } from "./features/priceDownload.js";
+import { scrapeWithPuppeteer } from "./features/scrapeWithPuppeteer.js";
 scrapeWithPuppeteer();

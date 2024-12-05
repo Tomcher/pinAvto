@@ -1,0 +1,5098 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<WinterSNGTyresVIP>АВТОШИНЫ СНГ -ЗИМНИЕ ШИНЫ
+	<stocks>
+		<stock name="sklad_1">г.Краснодар Склад 1 (пос.Березовый - Адресный)</stock>
+		<stock name="sklad_2">г.Краснодар Склад 2 (ул. Кореновская, 8)</stock>
+		<stock name="sklad_3">г. Краснодар Склад 3 (Коломойцева - Адресный )</stock>
+		<stock name="sklad_4">г.Астрахань, 1-проезд_Рождественского,11А</stock>
+		<stock name="sklad_5">г.Ставрополь, пр. Кулакова 18</stock>
+		<stock name="sklad_6">г.Волгоград, ул.Бурейская,8</stock>
+		<stock name="sklad_7">г.Воронеж, ул. Волгоградская, д. 30</stock>
+		<stock name="sklad_8">г. Сочи, ул. Батумское шоссе 94/20</stock>
+		<stock name="sklad_9">Крым, г. Симферополь, 11км Московского шоссе</stock>
+	</stocks>
+	<tyre>
+		<name>Автошина AMTEL 185/65R14 NORDMASTER EVO 86T ш. TL Арт. 4403600</name>
+		<product_id>УТ-00016187</product_id>
+		<artikul>4403600</artikul>
+		<cae>4403600</cae>
+		<price>3 600</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00016187.jpg</image>
+		<model>NORDMASTER EVO</model>
+		<brand>AMTEL</brand>
+		<runflat>NORDMASTER EVO</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина AMTEL 185/65R15 NORDMASTER EVO 88T ш. TT Арт. 4403700</name>
+		<product_id>УТ-00015091</product_id>
+		<artikul>4403700</artikul>
+		<cae>4403700</cae>
+		<price>3 720</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00015091.jpg</image>
+		<model>NORDMASTER EVO</model>
+		<brand>AMTEL</brand>
+		<runflat>NORDMASTER EVO</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1/>
+		<sklad2>2</sklad2>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина AMTEL 185/70R14 NORDMASTER EVO 88T ш. TL Арт. 4403500</name>
+		<product_id>УТ-00016188</product_id>
+		<artikul>4403500</artikul>
+		<cae>4403500</cae>
+		<price>3 750</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00016188.jpg</image>
+		<model>NORDMASTER EVO</model>
+		<brand>AMTEL</brand>
+		<runflat>NORDMASTER EVO</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина AMTEL 195/65R15 NORDMASTER EVO 91T ш. TL Арт. 4403800</name>
+		<product_id>УТ-00015384</product_id>
+		<artikul>4403800</artikul>
+		<cae>4403800</cae>
+		<price>3 970</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00015384.jpg</image>
+		<model>NORDMASTER EVO</model>
+		<brand>AMTEL</brand>
+		<runflat>NORDMASTER EVO</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>15</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>2</sklad6>
+		<sklad7>7</sklad7>
+		<sklad8/>
+		<sklad9>20</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина AMTEL 205/55R16 NORDMASTER EVO 94T ш. TL Арт. 4400700</name>
+		<product_id>УТ-00015092</product_id>
+		<artikul>4400700</artikul>
+		<cae>4400700</cae>
+		<price>4 220</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00015092.jpg</image>
+		<model>NORDMASTER EVO</model>
+		<brand>AMTEL</brand>
+		<runflat>NORDMASTER EVO</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина AMTEL 225/60R17 NORDMASTER EVO 103T XL ш. TL Арт. 4400800</name>
+		<product_id>УТ-00016750</product_id>
+		<artikul>4400800</artikul>
+		<cae>4400800</cae>
+		<price>5 580</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00016750.jpg</image>
+		<model>NORDMASTER EVO</model>
+		<brand>AMTEL</brand>
+		<runflat>NORDMASTER EVO</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>103(875кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>225</width>
+		<size>225/60R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина NORTEC 225/75R16 FORWARD PROFESSIONAL 219 104R TT Арт. Ё0000000118</name>
+		<product_id>УТ-00009660</product_id>
+		<artikul>Ё0000000118</artikul>
+		<cae>Ё0000000118</cae>
+		<price>5 920</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009660.jpg</image>
+		<model>FORWARD PROFESSIONAL 219</model>
+		<brand>NORTEC</brand>
+		<runflat>FORWARD PROFESSIONAL 219</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104 (900 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>75</height>
+		<width>225</width>
+		<size>225/75R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>12</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 175/65R14 Бел-357 82T TL Арт. 259002355</name>
+		<product_id>99075</product_id>
+		<artikul>259002355</artikul>
+		<cae>259002355</cae>
+		<price>3 322</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99075.jpg</image>
+		<model>Бел-357</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-357</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1>295</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>53</sklad4>
+		<sklad5>16</sklad5>
+		<sklad6/>
+		<sklad7>20</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 175/70R13 Бел-188 82T TL Арт. 259001423</name>
+		<product_id>УТ-00014788</product_id>
+		<artikul>259001423</artikul>
+		<cae>259001423</cae>
+		<price>3 267</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00014788.jpg</image>
+		<model>Бел-188</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-188</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 175/70R13 Бел-347 82T TL Арт. 259002260</name>
+		<product_id>95085</product_id>
+		<artikul>259002260</artikul>
+		<cae>259002260</cae>
+		<price>3 308</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/95085.jpg</image>
+		<model>Бел-347</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-347</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1>283</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>3</sklad4>
+		<sklad5>12</sklad5>
+		<sklad6/>
+		<sklad7>16</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 185/60R14 Бел-267 82T TL Арт. 259002086</name>
+		<product_id>94857</product_id>
+		<artikul>259002086</artikul>
+		<cae>259002086</cae>
+		<price>3 636</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94857.jpg</image>
+		<model>Бел-267</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-267</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1>144</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>21</sklad4>
+		<sklad5>12</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 185/60R15 Бел-327 84T TL Арт. 259002117</name>
+		<product_id>99254</product_id>
+		<artikul>259002117</artikul>
+		<cae>259002117</cae>
+		<price>3 859</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99254.jpg</image>
+		<model>Бел-327</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-327</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>84 (500 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>1</sklad7>
+		<sklad8/>
+		<sklad9>2</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 185/60R15 Бел-367 88T TL Арт. 259002118</name>
+		<product_id>131465</product_id>
+		<artikul>259002118</artikul>
+		<cae>259002118</cae>
+		<price>3 977</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/131465.jpg</image>
+		<model>Бел-367</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-367</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 185/65R14 Бел-147 86T TL Арт. 259002261</name>
+		<product_id>99296</product_id>
+		<artikul>259002261</artikul>
+		<cae>259002261</cae>
+		<price>3 633</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99296.jpg</image>
+		<model>Бел-147</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-147</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 185/65R15 Бел-287 88T TL Арт. 259002085</name>
+		<product_id>95086</product_id>
+		<artikul>259002085</artikul>
+		<cae>259002085</cae>
+		<price>4 037</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/95086.jpg</image>
+		<model>Бел-287</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-287</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1>63</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>91</sklad4>
+		<sklad5>12</sklad5>
+		<sklad6>32</sklad6>
+		<sklad7>17</sklad7>
+		<sklad8>6</sklad8>
+		<sklad9>108</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 185/75R16C Бел-293 104/102Q TL Арт. 259002285</name>
+		<product_id>94986</product_id>
+		<artikul>259002285</artikul>
+		<cae>259002285</cae>
+		<price>5 385</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94986.jpg</image>
+		<model>Бел-293</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-293</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>2</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 195/60R15 Бел-307 88T TL Арт. 259002083</name>
+		<product_id>131466</product_id>
+		<artikul>259002083</artikul>
+		<cae>259002083</cae>
+		<price>4 452</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/131466.jpg</image>
+		<model>Бел-307</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-307</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>195</width>
+		<size>195/60R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>36</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 195/65R15 Бел-337 91T TL Арт. 259002092</name>
+		<product_id>99255</product_id>
+		<artikul>259002092</artikul>
+		<cae>259002092</cae>
+		<price>3 977</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99255.jpg</image>
+		<model>Бел-337</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-337</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>6</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6>16</sklad6>
+		<sklad7>20</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 205/55R16 Бел-317 91T TL Арт. 259002095</name>
+		<product_id>99311</product_id>
+		<artikul>259002095</artikul>
+		<cae>259002095</cae>
+		<price>4 650</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99311.jpg</image>
+		<model>Бел-317</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-317</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1>456</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>14</sklad4>
+		<sklad5>12</sklad5>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 205/60R16 Бел-277 92H TL Арт. 259002044</name>
+		<product_id>131468</product_id>
+		<artikul>259002044</artikul>
+		<cae>259002044</cae>
+		<price>4 690</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/131468.jpg</image>
+		<model>Бел-277</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-277</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>H (210 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>205</width>
+		<size>205/60R16</size>
+		<sklad1>20</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 215/60R17 Бел-464 96H TL Арт. 259003002</name>
+		<product_id>6675022</product_id>
+		<artikul>259003002</artikul>
+		<cae>259003002</cae>
+		<price>5 448</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675022.jpg</image>
+		<model>Бел-464</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-464</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>H (210 км/ч)</speed_index>
+		<load_index>96 (710 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 215/65R16 Бел-217 98T TL Арт. 259002052</name>
+		<product_id>131470</product_id>
+		<artikul>259002052</artikul>
+		<cae>259002052</cae>
+		<price>5 699</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/131470.jpg</image>
+		<model>Бел-217</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-217</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>98 (750 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>12</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 225/60R18 Бел-494 100H TL Арт. 259002990</name>
+		<product_id>6675019</product_id>
+		<artikul>259002990</artikul>
+		<cae>259002990</cae>
+		<price>6 753</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675019.jpg</image>
+		<model>Бел-494</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-494</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>H (210 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R18</diameter>
+		<height>60</height>
+		<width>225</width>
+		<size>225/60R18</size>
+		<sklad1>18</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина BELSHINA 225/65R17 Бел-517  TL Арт. 259002832</name>
+		<product_id>6675021</product_id>
+		<artikul>259002832</artikul>
+		<cae>259002832</cae>
+		<price>6 803</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675021.jpg</image>
+		<model>Бел-517</model>
+		<brand>BELSHINA</brand>
+		<runflat>Бел-517</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>H (210 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>65</height>
+		<width>225</width>
+		<size>225/65R17</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 135/80R12 КАМА-503 68Q TL Арт. 1150001</name>
+		<product_id>95679</product_id>
+		<artikul>1150001</artikul>
+		<cae>1150001</cae>
+		<price>2 850</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/95679.jpg</image>
+		<model>КАМА-503</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-503</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>68 (315 кг)</load_index>
+		<diameter>R12</diameter>
+		<height>80</height>
+		<width>135</width>
+		<size>135/80R12</size>
+		<sklad1>17</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>1</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 135/80R12 КАМА-503 68Q ш. TL Арт. 1151001</name>
+		<product_id>4301</product_id>
+		<artikul>1151001</artikul>
+		<cae>1151001</cae>
+		<price>3 368</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/4301.jpg</image>
+		<model>КАМА-503</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-503</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>68 (315 кг)</load_index>
+		<diameter>R12</diameter>
+		<height>80</height>
+		<width>135</width>
+		<size>135/80R12</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/65R14 ALGA (НК-531) 82T TL Арт. 1150026</name>
+		<product_id>УТ-00003298</product_id>
+		<artikul>1150026</artikul>
+		<cae>1150026</cae>
+		<price>2 757</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003298.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>7</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/65R14 ALGA (НК-531) 82T ш. TL Арт. 1151012</name>
+		<product_id>УТ-00008241</product_id>
+		<artikul>1151012</artikul>
+		<cae>1151012</cae>
+		<price>3 234</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008241.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>8</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/65R14 V-521 Viatti Brina 82T TL Арт. 3150002</name>
+		<product_id>6672331</product_id>
+		<artikul>3150002</artikul>
+		<cae>3150002</cae>
+		<price>3 704</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6672331.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>2</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>2</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/65R14 V-522 Viatti Brina Nordico 82T ш. TL Арт. 3151002</name>
+		<product_id>УТ-00003409</product_id>
+		<artikul>3151002</artikul>
+		<cae>3151002</cae>
+		<price>3 891</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003409.jpg</image>
+		<model>V-522 Viatti Brina Nordico</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-522 Viatti Brina Nordico</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/65R14 КАМА-505 82T TL Арт. 1150005</name>
+		<product_id>99839</product_id>
+		<artikul>1150005</artikul>
+		<cae>1150005</cae>
+		<price>2 925</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99839.jpg</image>
+		<model>КАМА-505</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-505</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1>80</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>2</sklad4>
+		<sklad5>1</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/65R14 КАМА-505 82T ш. TL Арт. 1151005</name>
+		<product_id>98810</product_id>
+		<artikul>1151005</artikul>
+		<cae>1151005</cae>
+		<price>3 315</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/98810.jpg</image>
+		<model>КАМА-505</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-505</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>7</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>30</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R13 ALGA (НК-531) 82T Арт. 1150025</name>
+		<product_id>УТ-00008242</product_id>
+		<artikul>1150025</artikul>
+		<cae>1150025</cae>
+		<price>2 928</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008242.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>64</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R13 ALGA (НК-531) 82T ш. Арт. 1151011</name>
+		<product_id>УТ-00004036</product_id>
+		<artikul>1151011</artikul>
+		<cae>1151011</cae>
+		<price>3 365</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004036.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>97</sklad6>
+		<sklad7>62</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R13 V-521 Viatti Brina 82T Арт. 3150001</name>
+		<product_id>6672333</product_id>
+		<artikul>3150001</artikul>
+		<cae>3150001</cae>
+		<price>3 724</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6672333.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>9</sklad4>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7>12</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R13 Viatti Brina V-522 82T ш. Арт. 3151001</name>
+		<product_id>127391</product_id>
+		<artikul>3151001</artikul>
+		<cae>3151001</cae>
+		<price>3 763</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/127391.jpg</image>
+		<model>Viatti Brina V-522</model>
+		<brand>Нижнекамск</brand>
+		<runflat>Viatti Brina V-522</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>2</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R13 КАМА EURO-519 82T TL Арт. 2150002</name>
+		<product_id>126418</product_id>
+		<artikul>2150002</artikul>
+		<cae>2150002</cae>
+		<price>3 763</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/126418.jpg</image>
+		<model>КАМА EURO-519</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА EURO-519</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>22</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R13 КАМА-505 82T TL Арт. 1150004</name>
+		<product_id>94990</product_id>
+		<artikul>1150004</artikul>
+		<cae>1150004</cae>
+		<price>2 878</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94990.jpg</image>
+		<model>КАМА-505</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-505</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1>25</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>3</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 175/70R14 ALGA (НК-531) 84T ш. TL Арт. 1151013</name>
+		<product_id>УТ-00010422</product_id>
+		<artikul>1151013</artikul>
+		<cae>1151013</cae>
+		<price>3 738</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00010422.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>84 (500 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>44</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/60R14 ALGA (НК-531) 82T ш. Арт. 1151014</name>
+		<product_id>УТ-00004037</product_id>
+		<artikul>1151014</artikul>
+		<cae>1151014</cae>
+		<price>3 498</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004037.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>12</sklad4>
+		<sklad5/>
+		<sklad6>84</sklad6>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/60R14 V-521 Viatti Brina 82T TL Арт. 3150004</name>
+		<product_id>6672332</product_id>
+		<artikul>3150004</artikul>
+		<cae>3150004</cae>
+		<price>4 263</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6672332.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1>8</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>8</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6>8</sklad6>
+		<sklad7>8</sklad7>
+		<sklad8/>
+		<sklad9>8</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/60R14 КАМА-505 82T TL Арт. 1150006</name>
+		<product_id>6672334</product_id>
+		<artikul>1150006</artikul>
+		<cae>1150006</cae>
+		<price>2 980</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6672334.jpg</image>
+		<model>КАМА-505</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-505</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>10</sklad7>
+		<sklad8/>
+		<sklad9>83</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/60R14 КАМА-505 82T ш. TL Арт. 1151006</name>
+		<product_id>94991</product_id>
+		<artikul>1151006</artikul>
+		<cae>1151006</cae>
+		<price>3 498</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94991.jpg</image>
+		<model>КАМА-505</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-505</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>12</sklad4>
+		<sklad5/>
+		<sklad6>70</sklad6>
+		<sklad7>12</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/60R15 V-521 Viatti Brina 84T TL Арт. 3150008</name>
+		<product_id>127390</product_id>
+		<artikul>3150008</artikul>
+		<cae>3150008</cae>
+		<price>4 271</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/127390.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>84 (500 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>2</sklad5>
+		<sklad6>4</sklad6>
+		<sklad7>7</sklad7>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R14 ALGA (НК-531) 86T TL Арт. 1150029</name>
+		<product_id>УТ-00008243</product_id>
+		<artikul>1150029</artikul>
+		<cae>1150029</cae>
+		<price>3 323</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008243.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R14 ALGA (НК-531) 86T ш. TL Арт. 1151015</name>
+		<product_id>УТ-00023356</product_id>
+		<artikul>1151015</artikul>
+		<cae>1151015</cae>
+		<price>3 688</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00023356.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>60</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R14 V-521 Viatti Brina 86T TL Арт. 3150005</name>
+		<product_id>4152475</product_id>
+		<artikul>3150005</artikul>
+		<cae>3150005</cae>
+		<price>4 090</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/4152475.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1>46</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>4</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6>12</sklad6>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R14 Viatti Brina V-522 86T TL Арт. 3150036</name>
+		<product_id>УТ-00003346</product_id>
+		<artikul>3150036</artikul>
+		<cae>3150036</cae>
+		<price>2 850</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003346.jpg</image>
+		<model>Viatti Brina V-522</model>
+		<brand>Нижнекамск</brand>
+		<runflat>Viatti Brina V-522</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>1</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R14 КАМА EURO-519 86T ш. TL Арт. 2151006</name>
+		<product_id>20065</product_id>
+		<artikul>2151006</artikul>
+		<cae>2151006</cae>
+		<price>4 282</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/20065.jpg</image>
+		<model>КАМА EURO-519</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА EURO-519</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>1</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R15 V-521 Viatti Brina 88T TL Арт. 3150009</name>
+		<product_id>2145849</product_id>
+		<artikul>3150009</artikul>
+		<cae>3150009</cae>
+		<price>3 613</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/2145849.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/65R15 Viatti Brina V-522 88T ш. TL Арт. 3151009</name>
+		<product_id>800000452</product_id>
+		<artikul>3151009</artikul>
+		<cae>3151009</cae>
+		<price>3 862</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000452.jpg</image>
+		<model>Viatti Brina V-522</model>
+		<brand>Нижнекамск</brand>
+		<runflat>Viatti Brina V-522</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>2</sklad4>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/70R14 ALGA (НК-531) 88T TL Арт. 1150030</name>
+		<product_id>УТ-00008244</product_id>
+		<artikul>1150030</artikul>
+		<cae>1150030</cae>
+		<price>3 481</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008244.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1>3</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/70R14 КАМА EURO-519 88T ш. TL Арт. 2151007</name>
+		<product_id>УТ-00008681</product_id>
+		<artikul>2151007</artikul>
+		<cae>2151007</cae>
+		<price>4 554</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008681.jpg</image>
+		<model>КАМА EURO-519</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА EURO-519</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/75R16 Кама НК-532 97T TL Арт. 1150032</name>
+		<product_id>УТ-00015989</product_id>
+		<artikul>1150032</artikul>
+		<cae>1150032</cae>
+		<price>5 033</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00015989.jpg</image>
+		<model>Кама НК-532</model>
+		<brand>Нижнекамск</brand>
+		<runflat>Кама НК-532</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>97 (730 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16</size>
+		<sklad1>8</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/75R16C ALGA (НК-534) 104/102R Арт. 1250007</name>
+		<product_id>УТ-00007263</product_id>
+		<artikul>1250007</artikul>
+		<cae>1250007</cae>
+		<price>4 992</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007263.jpg</image>
+		<model>ALGA (НК-534)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-534)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>1</sklad7>
+		<sklad8/>
+		<sklad9>1</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/75R16C V-525 Viatti Vettore Brina 104/102R TL Арт. 3250018</name>
+		<product_id>800000163</product_id>
+		<artikul>3250018</artikul>
+		<cae>3250018</cae>
+		<price>6 742</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000163.jpg</image>
+		<model>V-525 Viatti Vettore Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-525 Viatti Vettore Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>8</sklad4>
+		<sklad5>2</sklad5>
+		<sklad6/>
+		<sklad7>12</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/75R16C КАМА EURO-520 104/102R TL Арт. 2250001</name>
+		<product_id>126430</product_id>
+		<artikul>2250001</artikul>
+		<cae>2250001</cae>
+		<price>6 086</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/126430.jpg</image>
+		<model>КАМА EURO-520</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА EURO-520</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>12</sklad7>
+		<sklad8/>
+		<sklad9>6</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 185/75R16C КАМА EURO-520 104/102R ш. TL Арт. 2251001</name>
+		<product_id>26210</product_id>
+		<artikul>2251001</artikul>
+		<cae>2251001</cae>
+		<price>6 683</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/26210.jpg</image>
+		<model>КАМА EURO-520</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА EURO-520</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>8</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/55R15 V-521 Viatti Brina 85T TL Арт. 3150011</name>
+		<product_id>800000546</product_id>
+		<artikul>3150011</artikul>
+		<cae>3150011</cae>
+		<price>5 429</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000546.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>85 (515 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>55</height>
+		<width>195</width>
+		<size>195/55R15</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>4</sklad4>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/60R15 V-521 Viatti Brina 88T TL Арт. 3150012</name>
+		<product_id>4152474</product_id>
+		<artikul>3150012</artikul>
+		<cae>3150012</cae>
+		<price>4 267</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/4152474.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>195</width>
+		<size>195/60R15</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/65R15 ALGA (НК-531) 91T TL Арт. 1150031</name>
+		<product_id>УТ-00007561</product_id>
+		<artikul>1150031</artikul>
+		<cae>1150031</cae>
+		<price>3 526</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007561.jpg</image>
+		<model>ALGA (НК-531)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA (НК-531)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>83</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>8</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>8</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/65R15 V-521 Viatti Brina 91T TL Арт. 3150013</name>
+		<product_id>19656</product_id>
+		<artikul>3150013</artikul>
+		<cae>3150013</cae>
+		<price>4 039</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/19656.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>12</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>8</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/65R15 V-522 Viatti Brina Nordico 91T ш. TL Арт. 3151013</name>
+		<product_id>УТ-00008682</product_id>
+		<artikul>3151013</artikul>
+		<cae>3151013</cae>
+		<price>4 544</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008682.jpg</image>
+		<model>V-522 Viatti Brina Nordico</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-522 Viatti Brina Nordico</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/65R15 КАМА-505 91Q TL Арт. 1150007</name>
+		<product_id>113015</product_id>
+		<artikul>1150007</artikul>
+		<cae>1150007</cae>
+		<price>3 315</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/113015.jpg</image>
+		<model>КАМА-505</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-505</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>132</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>8</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7>16</sklad7>
+		<sklad8/>
+		<sklad9>33</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/70R15C V-524 Viatti Vettore Inverno 104/102R TL Арт. 3250003</name>
+		<product_id>УТ-00017646</product_id>
+		<artikul>3250003</artikul>
+		<cae>3250003</cae>
+		<price>5 980</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00017646.jpg</image>
+		<model>V-524 Viatti Vettore Inverno</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-524 Viatti Vettore Inverno</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R15C</diameter>
+		<height>70</height>
+		<width>195</width>
+		<size>195/70R15C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>2</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/75R16C V-524 Viatti Vettore Inverno 107/105R ш. TL Арт. 3251007</name>
+		<product_id>УТ-00003873</product_id>
+		<artikul>3251007</artikul>
+		<cae>3251007</cae>
+		<price>7 248</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003873.jpg</image>
+		<model>V-524 Viatti Vettore Inverno</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-524 Viatti Vettore Inverno</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>107/105 (975/925 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>195</width>
+		<size>195/75R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>14</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 195/75R16C V-525 Viatti Vettore Brina 107/105R TL Арт. 3250019</name>
+		<product_id>2145848</product_id>
+		<artikul>3250019</artikul>
+		<cae>3250019</cae>
+		<price>7 791</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/2145848.jpg</image>
+		<model>V-525 Viatti Vettore Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-525 Viatti Vettore Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>107/105 (975/925 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>195</width>
+		<size>195/75R16C</size>
+		<sklad1>64</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/55R16 V-521 Viatti Brina 91T TL Арт. 3150015</name>
+		<product_id>19657</product_id>
+		<artikul>3150015</artikul>
+		<cae>3150015</cae>
+		<price>4 934</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/19657.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1>6</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>12</sklad6>
+		<sklad7>7</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/55R16 V-522 Viatti Brina Nordico 91T ш. TL Арт. 3151015</name>
+		<product_id>127739</product_id>
+		<artikul>3151015</artikul>
+		<cae>3151015</cae>
+		<price>4 984</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/127739.jpg</image>
+		<model>V-522 Viatti Brina Nordico</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-522 Viatti Brina Nordico</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>31</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/60R16 V-521 Viatti Brina 96T TL Арт. 3150016</name>
+		<product_id>800000340</product_id>
+		<artikul>3150016</artikul>
+		<cae>3150016</cae>
+		<price>5 105</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000340.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>96 (710 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>205</width>
+		<size>205/60R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/60R16 V-522 Viatti Brina Nordico 92T ш. TL Арт. 3151016</name>
+		<product_id>УТ-00008683</product_id>
+		<artikul>3151016</artikul>
+		<cae>3151016</cae>
+		<price>5 543</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008683.jpg</image>
+		<model>V-522 Viatti Brina Nordico</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-522 Viatti Brina Nordico</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>205</width>
+		<size>205/60R16</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/65R16 V-521 Viatti Brina 95T TL Арт. 3150017</name>
+		<product_id>800000343</product_id>
+		<artikul>3150017</artikul>
+		<cae>3150017</cae>
+		<price>6 461</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000343.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>95 (690 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R16</size>
+		<sklad1>8</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7>8</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/65R16 V-522 Viatti Brina Nordico 95T ш. TL Арт. 3151017</name>
+		<product_id>УТ-00008684</product_id>
+		<artikul>3151017</artikul>
+		<cae>3151017</cae>
+		<price>5 968</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008684.jpg</image>
+		<model>V-522 Viatti Brina Nordico</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-522 Viatti Brina Nordico</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>95 (690 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 205/65R16C V-525 Viatti Vettore Brina 107/105R TL Арт. 3250020</name>
+		<product_id>УТ-00008019</product_id>
+		<artikul>3250020</artikul>
+		<cae>3250020</cae>
+		<price>8 704</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008019.jpg</image>
+		<model>V-525 Viatti Vettore Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-525 Viatti Vettore Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>107/105 (975/925 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>11</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/55R17 V-521 Viatti Brina 94T TL Арт. 3150024</name>
+		<product_id>УТ-00004222</product_id>
+		<artikul>3150024</artikul>
+		<cae>3150024</cae>
+		<price>7 089</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004222.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>55</height>
+		<width>215</width>
+		<size>215/55R17</size>
+		<sklad1>26</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/60R16 V-521 Viatti Brina 95T TL Арт. 3150019</name>
+		<product_id>127737</product_id>
+		<artikul>3150019</artikul>
+		<cae>3150019</cae>
+		<price>5 932</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/127737.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>95 (690 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R16</size>
+		<sklad1>20</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>4</sklad6>
+		<sklad7>2</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/60R17 V-526 Viatti Bosco Brina 96T TL Арт. 3150090</name>
+		<product_id>УТ-00010062</product_id>
+		<artikul>3150090</artikul>
+		<cae>3150090</cae>
+		<price>6 777</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00010062.jpg</image>
+		<model>V-526 Viatti Bosco Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-526 Viatti Bosco Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>96 (710 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R17</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/65R15C V-525 Viatti Vettore Brina 104/102R TL Арт. 3250016</name>
+		<product_id>УТ-00008926</product_id>
+		<artikul>3250016</artikul>
+		<cae>3250016</cae>
+		<price>7 649</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008926.jpg</image>
+		<model>V-525 Viatti Vettore Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-525 Viatti Vettore Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R15C</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R15C</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/65R16 ALGA SUV (НК-532) 102T TL Арт. 1150034</name>
+		<product_id>УТ-00008240</product_id>
+		<artikul>1150034</artikul>
+		<cae>1150034</cae>
+		<price>4 877</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008240.jpg</image>
+		<model>ALGA SUV (НК-532)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA SUV (НК-532)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>102 (850 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/65R16 V-526 Viatti Bosco Brina 98T TL Арт. 3150085</name>
+		<product_id>УТ-00004773</product_id>
+		<artikul>3150085</artikul>
+		<cae>3150085</cae>
+		<price>5 809</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004773.jpg</image>
+		<model>V-526 Viatti Bosco Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-526 Viatti Bosco Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>98 (750 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/65R16 КАМА-515 102Q TL Арт. 1150011</name>
+		<product_id>4728</product_id>
+		<artikul>1150011</artikul>
+		<cae>1150011</cae>
+		<price>4 375</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/4728.jpg</image>
+		<model>КАМА-515</model>
+		<brand>Нижнекамск</brand>
+		<runflat>КАМА-515</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>102 (850 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>1</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 215/65R16C V-525 Viatti Vettore Brina 109/107R TL Арт. 3250022</name>
+		<product_id>УТ-00004566</product_id>
+		<artikul>3250022</artikul>
+		<cae>3250022</cae>
+		<price>8 803</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004566.jpg</image>
+		<model>V-525 Viatti Vettore Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-525 Viatti Vettore Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>109/107 (1030/975 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16C</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 225/45R17 V-521 Viatti Brina 94T TL Арт. 3150025</name>
+		<product_id>УТ-00004543</product_id>
+		<artikul>3150025</artikul>
+		<cae>3150025</cae>
+		<price>7 600</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004543.jpg</image>
+		<model>V-521 Viatti Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-521 Viatti Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>45</height>
+		<width>225</width>
+		<size>225/45R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>7</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 225/65R17 V-526 Viatti Bosco Brina 102T TL Арт. 3150092</name>
+		<product_id>УТ-00008685</product_id>
+		<artikul>3150092</artikul>
+		<cae>3150092</cae>
+		<price>7 071</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008685.jpg</image>
+		<model>V-526 Viatti Bosco Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-526 Viatti Bosco Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>102 (850 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>65</height>
+		<width>225</width>
+		<size>225/65R17</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>4</sklad4>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 225/75R16 ALGA SUV (НК-532) 108T TL Арт. 1150035</name>
+		<product_id>УТ-00008483</product_id>
+		<artikul>1150035</artikul>
+		<cae>1150035</cae>
+		<price>8 513</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00008483.jpg</image>
+		<model>ALGA SUV (НК-532)</model>
+		<brand>Нижнекамск</brand>
+		<runflat>ALGA SUV (НК-532)</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>108 (1000 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>75</height>
+		<width>225</width>
+		<size>225/75R16</size>
+		<sklad1>8</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>1</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 235/65R16C V-525 Viatti Vettore Brina 115/113R TL Арт. 3250024</name>
+		<product_id>УТ-00009571</product_id>
+		<artikul>3250024</artikul>
+		<cae>3250024</cae>
+		<price>9 667</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009571.jpg</image>
+		<model>V-525 Viatti Vettore Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-525 Viatti Vettore Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>115/113 (1215/1150 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>65</height>
+		<width>235</width>
+		<size>235/65R16C</size>
+		<sklad1>4</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина Нижнекамск 285/60R18 V-526 Viatti Bosco Brina 116T TL Арт. 3150102</name>
+		<product_id>УТ-00007858</product_id>
+		<artikul>3150102</artikul>
+		<cae>3150102</cae>
+		<price>10 159</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007858.jpg</image>
+		<model>V-526 Viatti Bosco Brina</model>
+		<brand>Нижнекамск</brand>
+		<runflat>V-526 Viatti Bosco Brina</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>116 (1250 кг)</load_index>
+		<diameter>R18</diameter>
+		<height>60</height>
+		<width>285</width>
+		<size>285/60R18</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 155/70R13 WINTER DRIVE PW-1 75T TL Арт. 448496981</name>
+		<product_id>94082</product_id>
+		<artikul>448496981</artikul>
+		<cae>448496981</cae>
+		<price>4 030</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94082.jpg</image>
+		<model>WINTER DRIVE PW-1</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE PW-1</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>75 (387 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>155</width>
+		<size>155/70R13</size>
+		<sklad1>9</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>14</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/65R14 SNOW-CROSS 82T ш. TL Арт. 1305231902</name>
+		<product_id>982767</product_id>
+		<artikul>1305231902</artikul>
+		<cae>1305231902</cae>
+		<price>3 870</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/982767.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/65R14 TUNGA NORDWAY 2 PW-5 82Q ш. TL Арт. 686198674</name>
+		<product_id>6675477</product_id>
+		<artikul>686198674</artikul>
+		<cae>686198674</cae>
+		<price>3 150</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675477.jpg</image>
+		<model>TUNGA NORDWAY 2 PW-5</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY 2 PW-5</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/65R14 WINTER DRIVE 2 86T TL Арт. 650855493</name>
+		<product_id>6675509</product_id>
+		<artikul>650855493</artikul>
+		<cae>650855493</cae>
+		<price>3 600</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675509.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1>3</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>1</sklad7>
+		<sklad8/>
+		<sklad9>1</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/65R14 WINTER DRIVE 82T TL Арт. 366617356</name>
+		<product_id>94079</product_id>
+		<artikul>366617356</artikul>
+		<cae>366617356</cae>
+		<price>3 500</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94079.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>175</width>
+		<size>175/65R14</size>
+		<sklad1>3</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/70R13 SNOW-CROSS 2 82T ш. TL Арт. 686191640</name>
+		<product_id>984444</product_id>
+		<artikul>686191640</artikul>
+		<cae>686191640</cae>
+		<price>3 890</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/984444.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>2</sklad5>
+		<sklad6>78</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/70R13 SNOW-CROSS 82T ш. TL Арт. 553505421</name>
+		<product_id>133049</product_id>
+		<artikul>553505421</artikul>
+		<cae>553505421</cae>
+		<price>3 780</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/133049.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>25</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>2</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/70R13 TUNGA NORDWAY 2 PW-5 82Q ш. TL Арт. 686199783</name>
+		<product_id>132712</product_id>
+		<artikul>686199783</artikul>
+		<cae>686199783</cae>
+		<price>3 090</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/132712.jpg</image>
+		<model>TUNGA NORDWAY 2 PW-5</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY 2 PW-5</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/70R13 WINTER DRIVE 2 82T TL Арт. 650855416</name>
+		<product_id>6675508</product_id>
+		<artikul>650855416</artikul>
+		<cae>650855416</cae>
+		<price>3 760</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675508.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/70R13 WINTER DRIVE 82T TL Арт. 1439300143</name>
+		<product_id>94078</product_id>
+		<artikul>1439300143</artikul>
+		<cae>1439300143</cae>
+		<price>3 640</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94078.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R13</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R13</size>
+		<sklad1>534</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>8</sklad6>
+		<sklad7>12</sklad7>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 175/70R14 SNOW-CROSS 2 88T ш. TL Арт. 686193520</name>
+		<product_id>УТ-00003700</product_id>
+		<artikul>686193520</artikul>
+		<cae>686193520</cae>
+		<price>4 150</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003700.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>175</width>
+		<size>175/70R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>2</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/60R14 SNOW-CROSS 2 86T ш. TL Арт. 686193231</name>
+		<product_id>800001886</product_id>
+		<artikul>686193231</artikul>
+		<cae>686193231</cae>
+		<price>4 230</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800001886.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>1</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/60R14 TUNGA NORDWAY 2 PW-5 82Q ш. TL Арт. 686199828</name>
+		<product_id>6675534</product_id>
+		<artikul>686199828</artikul>
+		<cae>686199828</cae>
+		<price>3 360</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675534.jpg</image>
+		<model>TUNGA NORDWAY 2 PW-5</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY 2 PW-5</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>82 (475 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>15</sklad4>
+		<sklad5/>
+		<sklad6>163</sklad6>
+		<sklad7>1</sklad7>
+		<sklad8/>
+		<sklad9>16</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/60R14 WINTER DRIVE 2 86T TL Арт. 1409385779</name>
+		<product_id>УТ-00007914</product_id>
+		<artikul>1409385779</artikul>
+		<cae>1409385779</cae>
+		<price>4 230</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007914.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/60R15 SNOW-CROSS 2 88T ш. TL Арт. 686193287</name>
+		<product_id>984446</product_id>
+		<artikul>686193287</artikul>
+		<cae>686193287</cae>
+		<price>4 440</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/984446.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/60R15 SNOW-CROSS 84T ш. TL Арт. 1305231993</name>
+		<product_id>6675476</product_id>
+		<artikul>1305231993</artikul>
+		<cae>1305231993</cae>
+		<price>4 310</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675476.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>84 (500 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R15</size>
+		<sklad1>5</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>32</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/60R15 WINTER DRIVE 2 88T TL Арт. 1352915285</name>
+		<product_id>844004575</product_id>
+		<artikul>1352915285</artikul>
+		<cae>1352915285</cae>
+		<price>4 370</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/844004575.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>185</width>
+		<size>185/60R15</size>
+		<sklad1>3</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R14 SNOW-CROSS 2 90T ш. TL Арт. 686193680</name>
+		<product_id>6672457</product_id>
+		<artikul>686193680</artikul>
+		<cae>686193680</cae>
+		<price>4 330</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6672457.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>90 (600 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>6</sklad5>
+		<sklad6>1</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R14 TUNGA NORDWAY 2 PW-5 86Q ш. TL Арт. 686199863</name>
+		<product_id>132746</product_id>
+		<artikul>686199863</artikul>
+		<cae>686199863</cae>
+		<price>3 440</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/132746.jpg</image>
+		<model>TUNGA NORDWAY 2 PW-5</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY 2 PW-5</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>86 (530 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>8</sklad4>
+		<sklad5/>
+		<sklad6>29</sklad6>
+		<sklad7>8</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R14 WINTER DRIVE 2 90T TL Арт. 650855530</name>
+		<product_id>УТ-00003604</product_id>
+		<artikul>650855530</artikul>
+		<cae>650855530</cae>
+		<price>4 160</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003604.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>90 (600 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>2</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R15 SNOW-CROSS 2 92T ш. TL Арт. 686193759</name>
+		<product_id>984445</product_id>
+		<artikul>686193759</artikul>
+		<cae>686193759</cae>
+		<price>4 310</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/984445.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>3</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R15 SNOW-CROSS PW-2 92T ш. TL Арт. 1305231971</name>
+		<product_id>131502</product_id>
+		<artikul>1305231971</artikul>
+		<cae>1305231971</cae>
+		<price>4 100</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/131502.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R15 WINTER DRIVE 2 92T TL Арт. 1361643884</name>
+		<product_id>УТ-00002799</product_id>
+		<artikul>1361643884</artikul>
+		<cae>1361643884</cae>
+		<price>4 030</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00002799.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1>8</sklad1>
+		<sklad2/>
+		<sklad3>1</sklad3>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>62</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/65R15 WINTER DRIVE 92T TL Арт. 1439301505</name>
+		<product_id>95513</product_id>
+		<artikul>1439301505</artikul>
+		<cae>1439301505</cae>
+		<price>3 870</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/95513.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>185</width>
+		<size>185/65R15</size>
+		<sklad1>4</sklad1>
+		<sklad2/>
+		<sklad3>136</sklad3>
+		<sklad4>1</sklad4>
+		<sklad5>10</sklad5>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>32</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/70R14 SNOW-CROSS 2 92T ш. TL Арт. 686193194</name>
+		<product_id>УТ-00007912</product_id>
+		<artikul>686193194</artikul>
+		<cae>686193194</cae>
+		<price>4 480</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007912.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/70R14 SNOW-CROSS 92T ш. TL Арт. 1305231957</name>
+		<product_id>113645</product_id>
+		<artikul>1305231957</artikul>
+		<cae>1305231957</cae>
+		<price>4 350</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/113645.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>92 (630 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>1</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/70R14 TUNGA NORDWAY 88Q ш. TL Арт. 625672737</name>
+		<product_id>6675472</product_id>
+		<artikul>625672737</artikul>
+		<cae>625672737</cae>
+		<price>3 660</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675472.jpg</image>
+		<model>TUNGA NORDWAY</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/70R14 WINTER DRIVE 88T TL Арт. 468326162</name>
+		<product_id>94083</product_id>
+		<artikul>468326162</artikul>
+		<cae>468326162</cae>
+		<price>4 250</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94083.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R14</diameter>
+		<height>70</height>
+		<width>185</width>
+		<size>185/70R14</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/75R16C BUSINESS CW-2 104/102Q ш. TL Арт. 686086346</name>
+		<product_id>982731</product_id>
+		<artikul>686086346</artikul>
+		<cae>686086346</cae>
+		<price>6 690</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/982731.jpg</image>
+		<model>BUSINESS CW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>104/102 (900/850 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>185</width>
+		<size>185/75R16C</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 185/80R14C BUSINESS CW-2 102/100Q ш. TL Арт. 682538666</name>
+		<product_id>УТ-00004256</product_id>
+		<artikul>682538666</artikul>
+		<cae>682538666</cae>
+		<price>6 330</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00004256.jpg</image>
+		<model>BUSINESS CW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>102/100 (850/800 кг)</load_index>
+		<diameter>R14C</diameter>
+		<height>80</height>
+		<width>185</width>
+		<size>185/80R14C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/55R16 WINTER DRIVE 2 91T TL Арт. 1352916647</name>
+		<product_id>УТ-00014451</product_id>
+		<artikul>1352916647</artikul>
+		<cae>1352916647</cae>
+		<price>5 740</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00014451.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>195</width>
+		<size>195/55R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/60R15 WINTER DRIVE 88T TL Арт. 468326396</name>
+		<product_id>94088</product_id>
+		<artikul>468326396</artikul>
+		<cae>468326396</cae>
+		<price>4 460</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94088.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>88 (560 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>60</height>
+		<width>195</width>
+		<size>195/60R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/65R15 SNOW-CROSS 2 95T ш. TL Арт. 686193309</name>
+		<product_id>984443</product_id>
+		<artikul>686193309</artikul>
+		<cae>686193309</cae>
+		<price>4 660</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/984443.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>95 (690 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/65R15 SNOW-CROSS 91T ш. TL Арт. 1358798436</name>
+		<product_id>132053</product_id>
+		<artikul>1358798436</artikul>
+		<cae>1358798436</cae>
+		<price>4 430</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/132053.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7>1</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/65R15 WINTER DRIVE 2 95T TL Арт. 1352917216</name>
+		<product_id>6675505</product_id>
+		<artikul>1352917216</artikul>
+		<cae>1352917216</cae>
+		<price>4 140</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675505.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>95 (690 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/65R15 WINTER DRIVE 91T TL Арт. 1439301629</name>
+		<product_id>94080</product_id>
+		<artikul>1439301629</artikul>
+		<cae>1439301629</cae>
+		<price>3 980</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/94080.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>91 (615 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>195</width>
+		<size>195/65R15</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>2</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>24</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 195/75R16C BUSINESS CW-2 107/105Q ш. TL Арт. 651038149</name>
+		<product_id>УТ-00003509</product_id>
+		<artikul>651038149</artikul>
+		<cae>651038149</cae>
+		<price>7 190</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003509.jpg</image>
+		<model>BUSINESS CW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>107/105 (975/925 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>195</width>
+		<size>195/75R16C</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5>6</sklad5>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>6</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/55R16 SNOW-CROSS 2 94T ш. TL Арт. 686208534</name>
+		<product_id>800000284</product_id>
+		<artikul>686208534</artikul>
+		<cae>686208534</cae>
+		<price>5 190</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000284.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>1</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>12</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/55R16 SNOW-CROSS 94T ш. TL Арт. 532211351</name>
+		<product_id>132054</product_id>
+		<artikul>532211351</artikul>
+		<cae>532211351</cae>
+		<price>5 030</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/132054.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>1</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/55R16 TUNGA NORDWAY 2 PW-5 94Q ш. TL Арт. 1325893843</name>
+		<product_id>УТ-00003497</product_id>
+		<artikul>1325893843</artikul>
+		<cae>1325893843</cae>
+		<price>4 200</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003497.jpg</image>
+		<model>TUNGA NORDWAY 2 PW-5</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY 2 PW-5</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/55R16 WINTER DRIVE 2 94T TL Арт. 1352914622</name>
+		<product_id>6675507</product_id>
+		<artikul>1352914622</artikul>
+		<cae>1352914622</cae>
+		<price>5 110</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675507.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>9</sklad7>
+		<sklad8/>
+		<sklad9>42</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/55R16 WINTER DRIVE 94T TL Арт. 366617336</name>
+		<product_id>95515</product_id>
+		<artikul>366617336</artikul>
+		<cae>366617336</cae>
+		<price>4 950</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/95515.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>55</height>
+		<width>205</width>
+		<size>205/55R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3>152</sklad3>
+		<sklad4/>
+		<sklad5>4</sklad5>
+		<sklad6>8</sklad6>
+		<sklad7>5</sklad7>
+		<sklad8/>
+		<sklad9>7</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/60R16 WINTER DRIVE 96T TL Арт. 366617396</name>
+		<product_id>98853</product_id>
+		<artikul>366617396</artikul>
+		<cae>366617396</cae>
+		<price>5 240</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/98853.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>96 (710 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>205</width>
+		<size>205/60R16</size>
+		<sklad1>9</sklad1>
+		<sklad2/>
+		<sklad3>2</sklad3>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>2</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/65R15 TUNGA NORDWAY 2 PW-5 94Q ш. TL Арт. 686200437</name>
+		<product_id>УТ-00007753</product_id>
+		<artikul>686200437</artikul>
+		<cae>686200437</cae>
+		<price>4 140</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007753.jpg</image>
+		<model>TUNGA NORDWAY 2 PW-5</model>
+		<brand>CORDIANT</brand>
+		<runflat>TUNGA NORDWAY 2 PW-5</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R15</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/65R15 WINTER DRIVE 94T TL Арт. 461227260</name>
+		<product_id>99073</product_id>
+		<artikul>461227260</artikul>
+		<cae>461227260</cae>
+		<price>4 840</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/99073.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R15</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R15</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/65R16 SNOW-CROSS 2 99T ш. TL Арт. 1345676569</name>
+		<product_id>800000024</product_id>
+		<artikul>1345676569</artikul>
+		<cae>1345676569</cae>
+		<price>6 100</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800000024.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>99 (775 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R16</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 205/65R16 WINTER DRIVE 2 SUV 99T TL Арт. 1332287398</name>
+		<product_id>800002023</product_id>
+		<artikul>1332287398</artikul>
+		<cae>1332287398</cae>
+		<price>5 930</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800002023.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>99 (775 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>205</width>
+		<size>205/65R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/55R17 SNOW-CROSS PW-2 98T ш. TL Арт. 1439299300</name>
+		<product_id>6675473</product_id>
+		<artikul>1439299300</artikul>
+		<cae>1439299300</cae>
+		<price>7 640</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675473.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>98 (750 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>55</height>
+		<width>215</width>
+		<size>215/55R17</size>
+		<sklad1>4</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/55R17 WINTER DRIVE 2 98T TL Арт. 686207781</name>
+		<product_id>800002204</product_id>
+		<artikul>686207781</artikul>
+		<cae>686207781</cae>
+		<price>6 880</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800002204.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>98 (750 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>55</height>
+		<width>215</width>
+		<size>215/55R17</size>
+		<sklad1>5</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>8</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/55R17 WINTER DRIVE 98T TL Арт. 650856846</name>
+		<product_id>115410</product_id>
+		<artikul>650856846</artikul>
+		<cae>650856846</cae>
+		<price>6 670</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/115410.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>98 (750 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>55</height>
+		<width>215</width>
+		<size>215/55R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/60R16 SNOW-CROSS 2 99T ш. TL Арт. 686209919</name>
+		<product_id>УТ-00009681</product_id>
+		<artikul>686209919</artikul>
+		<cae>686209919</cae>
+		<price>6 520</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009681.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>99 (775 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R16</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/60R16 SNOW-CROSS 95T ш. TL Арт. 641377447</name>
+		<product_id>6675533</product_id>
+		<artikul>641377447</artikul>
+		<cae>641377447</cae>
+		<price>6 330</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6675533.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>95 (690 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R16</size>
+		<sklad1>3</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>3</sklad6>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9>6</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/60R16 WINTER DRIVE 2 99T TL Арт. 1352916661</name>
+		<product_id>УТ-00003605</product_id>
+		<artikul>1352916661</artikul>
+		<cae>1352916661</cae>
+		<price>6 180</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003605.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>99 (775 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R16</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/60R17 SNOW-CROSS 2 100T ш. TL Арт. 1358802716</name>
+		<product_id>6676097</product_id>
+		<artikul>1358802716</artikul>
+		<cae>1358802716</cae>
+		<price>7 950</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/6676097.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R17</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/60R17 SNOW-CROSS PW-2 100T ш. TL Арт. 1363475305</name>
+		<product_id>982850</product_id>
+		<artikul>1363475305</artikul>
+		<cae>1363475305</cae>
+		<price>7 710</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/982850.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R17</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/60R17 WINTER DRIVE 2 SUV 100T TL Арт. 686207833</name>
+		<product_id>844004637</product_id>
+		<artikul>686207833</artikul>
+		<cae>686207833</cae>
+		<price>6 590</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/844004637.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>215</width>
+		<size>215/60R17</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>2</sklad4>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/65R16 WINTER DRIVE 102T TL Арт. 366617406</name>
+		<product_id>98122</product_id>
+		<artikul>366617406</artikul>
+		<cae>366617406</cae>
+		<price>5 600</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/98122.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>102 (850 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7>4</sklad7>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/65R16C BUSINESS CA-2 109/107R TL Арт. 1462340048</name>
+		<product_id>УТ-00015202</product_id>
+		<artikul>1462340048</artikul>
+		<cae>1462340048</cae>
+		<price>7 640</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00015202.jpg</image>
+		<model>BUSINESS CA-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CA-2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Всесезонная</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>109/107 (1030/975 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>4</sklad4>
+		<sklad5>4</sklad5>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/65R16C BUSINESS CW-2 109/107P ш. TL Арт. 651038661</name>
+		<product_id>113683</product_id>
+		<artikul>651038661</artikul>
+		<cae>651038661</cae>
+		<price>8 600</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/113683.jpg</image>
+		<model>BUSINESS CW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>P (150 км/ч)</speed_index>
+		<load_index>109/107 (1030/975 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16C</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>4</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/65R16C BUSINESS CW-2 109/107Q ш. TL Арт. 651038661</name>
+		<product_id>УТ-00016976</product_id>
+		<artikul>651038661</artikul>
+		<cae>651038661</cae>
+		<price>8 350</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00016976.jpg</image>
+		<model>BUSINESS CW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>Q (160 км/ч)</speed_index>
+		<load_index>109/107 (1030/975 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>65</height>
+		<width>215</width>
+		<size>215/65R16C</size>
+		<sklad1>4</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/70R16 SNOW-CROSS PW-2 100T ш. TL Арт. 645752642</name>
+		<product_id>УТ-00005545</product_id>
+		<artikul>645752642</artikul>
+		<cae>645752642</cae>
+		<price>7 640</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00005545.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>70</height>
+		<width>215</width>
+		<size>215/70R16</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/70R16 WINTER DRIVE 100T TL Арт. 494490412</name>
+		<product_id>113640</product_id>
+		<artikul>494490412</artikul>
+		<cae>494490412</cae>
+		<price>7 510</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/113640.jpg</image>
+		<model>WINTER DRIVE</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>100 (800 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>70</height>
+		<width>215</width>
+		<size>215/70R16</size>
+		<sklad1>5</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 215/75R16C BUSINESS CA-2 116/114R TL Арт. 1462340035</name>
+		<product_id>УТ-00017518</product_id>
+		<artikul>1462340035</artikul>
+		<cae>1462340035</cae>
+		<price>8 350</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00017518.jpg</image>
+		<model>BUSINESS CA-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>BUSINESS CA-2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Всесезонная</season>
+		<speed_index>R (170 км/ч)</speed_index>
+		<load_index>116/114 (1250/1180 кг)</load_index>
+		<diameter>R16C</diameter>
+		<height>75</height>
+		<width>215</width>
+		<size>215/75R16C</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/45R17 SNOW-CROSS 94T ш. TL Арт. 650855905</name>
+		<product_id>УТ-00003510</product_id>
+		<artikul>650855905</artikul>
+		<cae>650855905</cae>
+		<price>8 000</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00003510.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>45</height>
+		<width>225</width>
+		<size>225/45R17</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/45R17 WINTER DRIVE 2 94T TL Арт. 1440668535</name>
+		<product_id>УТ-00014010</product_id>
+		<artikul>1440668535</artikul>
+		<cae>1440668535</cae>
+		<price>7 690</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00014010.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>94 (670 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>45</height>
+		<width>225</width>
+		<size>225/45R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/50R17 SNOW-CROSS 2 98T ш. TL Арт. 686210107</name>
+		<product_id>УТ-00009682</product_id>
+		<artikul>686210107</artikul>
+		<cae>686210107</cae>
+		<price>7 220</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009682.jpg</image>
+		<model>SNOW-CROSS 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>98 (750 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>50</height>
+		<width>225</width>
+		<size>225/50R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/55R17 SNOW-CROSS PW-2 101T ш. TL Арт. 686082940</name>
+		<product_id>УТ-00007790</product_id>
+		<artikul>686082940</artikul>
+		<cae>686082940</cae>
+		<price>8 190</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007790.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>101 (825 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>55</height>
+		<width>225</width>
+		<size>225/55R17</size>
+		<sklad1>6</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6>2</sklad6>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/60R17 SNOW-CROSS 2 SUV 103T ш. TL Арт. 1439299800</name>
+		<product_id>УТ-00009680</product_id>
+		<artikul>1439299800</artikul>
+		<cae>1439299800</cae>
+		<price>7 910</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009680.jpg</image>
+		<model>SNOW-CROSS 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS 2 SUV</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>103(875кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>225</width>
+		<size>225/60R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/60R17 WINTER DRIVE 2 SUV 103/101T TL Арт. 1352918662</name>
+		<product_id>800001810</product_id>
+		<artikul>1352918662</artikul>
+		<cae>1352918662</cae>
+		<price>6 830</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/800001810.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>103/101 (875/825 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>60</height>
+		<width>225</width>
+		<size>225/60R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9>4</sklad9>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/65R17 SNOW-CROSS 106T ш. TL Арт. 1363475212</name>
+		<product_id>982851</product_id>
+		<artikul>1363475212</artikul>
+		<cae>1363475212</cae>
+		<price>7 000</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/982851.jpg</image>
+		<model>SNOW-CROSS</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>106 (950 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>65</height>
+		<width>225</width>
+		<size>225/65R17</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/65R17 WINTER DRIVE 2 SUV 106T TL Арт. 686208019</name>
+		<product_id>844004051</product_id>
+		<artikul>686208019</artikul>
+		<cae>686208019</cae>
+		<price>6 810</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/844004051.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>106 (950 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>65</height>
+		<width>225</width>
+		<size>225/65R17</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 225/70R16 SNOW-CROSS PW-2 107T ш. TL Арт. 00000014376</name>
+		<product_id>УТ-00009822</product_id>
+		<artikul>00000014376</artikul>
+		<cae>00000014376</cae>
+		<price>6 810</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009822.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>107 (975 кг)</load_index>
+		<diameter>R16</diameter>
+		<height>70</height>
+		<width>225</width>
+		<size>225/70R16</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 235/55R17 SNOW-CROSS PW-2 103T ш. TL Арт. 686083172</name>
+		<product_id>УТ-00007788</product_id>
+		<artikul>686083172</artikul>
+		<cae>686083172</cae>
+		<price>8 410</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00007788.jpg</image>
+		<model>SNOW-CROSS PW-2</model>
+		<brand>CORDIANT</brand>
+		<runflat>SNOW-CROSS PW-2</runflat>
+		<thorn>Шипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>103(875кг)</load_index>
+		<diameter>R17</diameter>
+		<height>55</height>
+		<width>235</width>
+		<size>235/55R17</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 235/55R18 WINTER DRIVE 2 SUV 104T TL Арт. 1446614283</name>
+		<product_id>УТ-00009373</product_id>
+		<artikul>1446614283</artikul>
+		<cae>1446614283</cae>
+		<price>8 510</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00009373.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>104 (900 кг)</load_index>
+		<diameter>R18</diameter>
+		<height>55</height>
+		<width>235</width>
+		<size>235/55R18</size>
+		<sklad1/>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 235/60R18 WINTER DRIVE 2 SUV 107T TL Арт. 1352916669</name>
+		<product_id>УТ-00002767</product_id>
+		<artikul>1352916669</artikul>
+		<cae>1352916669</cae>
+		<price>7 780</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/УТ-00002767.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>107 (975 кг)</load_index>
+		<diameter>R18</diameter>
+		<height>60</height>
+		<width>235</width>
+		<size>235/60R18</size>
+		<sklad1>1</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 235/65R17 WINTER DRIVE 2 108T TL Арт. 686208038</name>
+		<product_id>844004587</product_id>
+		<artikul>686208038</artikul>
+		<cae>686208038</cae>
+		<price>7 480</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/844004587.jpg</image>
+		<model>WINTER DRIVE 2</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>108 (1000 кг)</load_index>
+		<diameter>R17</diameter>
+		<height>65</height>
+		<width>235</width>
+		<size>235/65R17</size>
+		<sklad1>5</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4>4</sklad4>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+	<tyre>
+		<name>Автошина CORDIANT 255/55R18 WINTER DRIVE 2 SUV 109T TL Арт. 1332287405</name>
+		<product_id>844004127</product_id>
+		<artikul>1332287405</artikul>
+		<cae>1332287405</cae>
+		<price>8 630</price>
+		<price_mrc/>
+		<price_opt/>
+		<image>http://b2b.pin-avto.ru/photos/844004127.jpg</image>
+		<model>WINTER DRIVE 2 SUV</model>
+		<brand>CORDIANT</brand>
+		<runflat>WINTER DRIVE 2 SUV</runflat>
+		<thorn>Нешипованная</thorn>
+		<tiretype/>
+		<season>Зимняя</season>
+		<speed_index>T (190 км/ч)</speed_index>
+		<load_index>109 (1030 кг)</load_index>
+		<diameter>R18</diameter>
+		<height>55</height>
+		<width>255</width>
+		<size>255/55R18</size>
+		<sklad1>2</sklad1>
+		<sklad2/>
+		<sklad3/>
+		<sklad4/>
+		<sklad5/>
+		<sklad6/>
+		<sklad7/>
+		<sklad8/>
+		<sklad9/>
+	</tyre>
+</WinterSNGTyresVIP>

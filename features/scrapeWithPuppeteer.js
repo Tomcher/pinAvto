@@ -7,7 +7,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import axios from 'axios';
+import * as path from 'path';
 import puppeteer from 'puppeteer';
+import * as fs from "fs";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = dirname(fileURLToPath(import.meta.url));
 export function scrapeWithPuppeteer() {
     return __awaiter(this, void 0, void 0, function* () {
         // Launch a browser
@@ -28,7 +34,35 @@ export function scrapeWithPuppeteer() {
                 .filter(anchor => anchor.href.includes('.xml'))
                 .map(anchor => anchor.href);
         });
-        console.log('Found download links:', links);
+        // Filter to get only the selected files from the first attached image
+        const selectedFiles = links.filter(link => link.includes('OtherTyresVIP.xml') ||
+            link.includes('SummerTyresVIP.xml') ||
+            link.includes('TyresVIP.xml') ||
+            link.includes('WinterSNGTyresVIP.xml') ||
+            link.includes('WinterTyresVIP.xml'));
+        console.log('Found selected download links:', selectedFiles);
+        // Download each selected file
+        for (const fileUrl of selectedFiles) {
+            try {
+                console.log(`Downloading file: ${fileUrl}`);
+                const response = yield axios.get(fileUrl, { responseType: 'stream' });
+                // Extract the file name from the URL
+                const fileName = path.basename(fileUrl);
+                const filePath = path.join(__dirname, "..", "downloads", fileName);
+                // Save the file locally
+                const writer = fs.createWriteStream(filePath);
+                response.data.pipe(writer);
+                writer.on('finish', () => {
+                    console.log('File successfully downloaded:', filePath);
+                });
+                writer.on('error', (err) => {
+                    console.error('Error while writing file:', err);
+                });
+            }
+            catch (error) {
+                console.error(`Failed to download ${fileUrl}:`, error);
+            }
+        }
         // Close the browser
         yield browser.close();
     });
