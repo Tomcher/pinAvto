@@ -1,6 +1,5 @@
 import fs from 'fs';
 import { parseStringPromise, Builder } from 'xml2js';
-import { v4 as uuidv4 } from 'uuid';
 
 // Define the function to compile <tyre> elements from multiple XML files into one
 export async function compileTiresToFile(inputFiles: string[], outputFile: string) {
@@ -28,14 +27,14 @@ export async function compileTiresToFile(inputFiles: string[], outputFile: strin
         }
 
         // Add UUID to each tire
-        allTires = allTires.map(tire => ({ ...tire, uuid: uuidv4() }));
+        allTires = allTires.map(tire => ({ ...tire}));
 
         // Create the new XML structure based on the Sample template
         const ads = {
             Ads: {
                 $: { formatVersion: "3", target: "Avito.ru" },
                 Ad: allTires.map(tire => ({
-                    Id: tire.uuid,
+                    Id: tire.product_id,
                     Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
                     Category: "Запчасти и аксессуары",
                     Description: `⭐️ ⭐️ ⭐️ ⭐️ ⭐️\nАвтошина ${tire.brand[0]} ${tire.size[0]} ${tire.model[0]} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}, по низким ценам с бесплатной доставкой.\n\n✅ Самая низкая цена в Ставропольском крае!\n\n✅ Большой выбор шин в Ставрополе в наличии.\n\n✅ Большой склад в Ставрополе и 2 склада в Краснодаре.\n\n✅ Доставка по Ставрополю бесплатная. Отправка в регионы ТК и автобусом (при возможности).\n\n✅ Можно оформить в кредит на 3-6 месяцев.\n\n✅ Цена указана при оплате за наличку или переводом на карту. Цена указана за 1шт. при покупке от 4шт.\n\n✅ Остались вопросы? - Пишите нам в личных сообщениях, наши специалисты обязательно помогут вам с выбором.\n\n✅ Не забудьте добавить объявление в «избранное»`,
