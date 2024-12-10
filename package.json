@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "npx tsc && node script.js"
+    "start:dev": "npx tsc && node script.js",
+    "start": "node dist/script.js",
+    "build": "tsc",
+    "build:docker": "docker build . -t ghcr.io/tomcher/pinavto:latest",
+    "build:push": "npm run build:docker && echo $npm_config_token | docker login ghcr.io -u Tomcher --password-stdin && docker push ghcr.io/tomcher/pinavto:latest"
   },
   "keywords": [],
   "author": "",
@@ -11,15 +15,19 @@
   "type": "module",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^6.1.13",
-    "typescript": "^5.7.2",
+    "puppeteer": "^23.10.1",
+    "uuid": "^11.0.3",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.1",
     "@types/node": "^22.10.1",
     "@types/xml2js": "^0.4.14",
-    "prettier": "^3.4.1"
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2"
   }
 }
