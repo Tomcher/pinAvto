@@ -2,7 +2,6 @@ import { compileTiresToFile } from "./features/compileTiresToFile/compileTiresTo
 import { scrapeWithPuppeteer } from "./features/scrapeWithPuppeteer/scrapeWithPuppeteer.js";
 
 
-
 const inputFiles = [
     './downloads/OtherTyresVIP.xml',
     './downloads/SummerTyresVIP.xml',

@@ -32,7 +32,7 @@ const links = [
 
         // Extract the file name from the URL
         const fileName = path.basename(fileUrl);
-        const filePath = path.join(__dirname, "..", "..", "downloads", fileName);
+        const filePath = path.join(__dirname, "..", "..", "..", "downloads", fileName);
         await fs.writeFile(filePath, response.data)
 
         console.log('File successfully downloaded:', filePath);
