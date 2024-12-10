@@ -22,8 +22,8 @@ async function scrapeAndCompile() {
   await compileTiresToFile(links, "CompiledTires.xml");
 }
 
-cron.schedule('*/30 * * * *', async () => {
-  console.log('running a task every 30 minutes');
+cron.schedule('0 9,21 * * *', async () => {
+  console.log('running a task at 9:00 and 21:00');
   await scrapeAndCompile();
 });
 
