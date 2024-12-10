@@ -32,7 +32,7 @@ jobs:
           PORT: 22
           KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          ssh $USER@$HOST -p $PORT -i $(ssh-agent) -o "StrictHostKeyChecking no" <<EOF
+          echo "${{ secrets.DEPLOY_KEY }}" | ssh $USER@$HOST -p $PORT -i /dev/stdin -o "StrictHostKeyChecking no" <<EOF
             docker login ghcr.io -u ${{ github.repository_owner }} --password ${{ secrets.DOCKERHUB_TOKEN }}
             docker pull ghcr.io/tomcher/pinavto:latest
             docker stop pinavto || true
