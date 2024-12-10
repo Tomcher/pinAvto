@@ -6,16 +6,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-export async function scrapeWithPuppeteer() {
-const links = [
-  'OtherTyresVIP.xml',
-  'SummerTyresVIP.xml',
-  'TyresVIP.xml',
-  'WinterSNGTyresVIP.xml',
-  'WinterTyresVIP.xml'
-]
-
-
+export async function scrapeWithPuppeteer(links: string[]) {
   console.log('Found selected download links:', links);
 
   // Download each selected file and replace existing files in /downloads
