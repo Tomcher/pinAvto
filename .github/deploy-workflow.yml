@@ -1,0 +1,36 @@
+name: Build and Deploy Docker Image
+
+on:
+  push:
+    branches:
+      - template
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Docker
+        uses: docker/setup-docker@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: https://ghcr.io
+      - name: Build Docker Image
+        run: |
+          docker build . -t ghcr.io/tomcher/pinavto:latest
+      - name: Push Docker Image to Registry
+        run: |
+          docker push ghcr.io/tomcher/pinavto:latest
+      - name: Deploy to Remote Server using SSH
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: 22
+          KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          ssh $USER@$HOST -p $PORT -i $(ssh-agent) -o "StrictHostKeyChecking no" <<EOF
+            docker login ghcr.io -u \$GITHUB_ACTOR --password \$GITHUB_TOKEN
+            docker pull ghcr.io/tomcher/pinavto:latest
+            docker stop pinavto || true
+            docker rm pinavto || true
+            docker run -d --name pinavto ghcr.io/tomcher/pinavto:latest
+          EOF

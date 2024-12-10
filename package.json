@@ -5,7 +5,9 @@
   "scripts": {
     "start:dev": "npx tsc && node script.js",
     "start": "node dist/script.js",
-    "build": "tsc"
+    "build": "tsc",
+    "build:docker": "docker build . -t ghcr.io/tomcher/pinavto:latest",
+    "build:push": "npm run build:docker && echo $npm_config_token | docker login ghcr.io -u Tomcher --password-stdin && docker push ghcr.io/tomcher/pinavto:latest"
   },
   "keywords": [],
   "author": "",
