@@ -25,14 +25,17 @@ jobs:
         with:
           push: true
           tags: ghcr.io/tomcher/pinavto:latest
-      - name: Deploy to Remote Server using SSH
+      - 
+        name: Deploy to Remote Server using SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
         env:
           HOST: ${{ vars.DEPLOY_HOST }}
           USER: ${{ vars.DEPLOY_USER }}
-          PORT: 22
           KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          echo "${{ secrets.DEPLOY_KEY }}" | ssh $USER@$HOST -p $PORT -i /dev/stdin -o "StrictHostKeyChecking no" <<EOF
+          ssh $USER@$HOST -o "StrictHostKeyChecking no" <<EOF
             docker login ghcr.io -u ${{ github.repository_owner }} --password ${{ secrets.DOCKERHUB_TOKEN }}
             docker pull ghcr.io/tomcher/pinavto:latest
             docker stop pinavto || true
