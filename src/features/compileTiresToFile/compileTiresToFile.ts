@@ -12,6 +12,7 @@ export async function compileTiresToFile(
   outputFile: string
 ) {
   try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let allTires: any[] = [];
 
     // Loop through each input file and read its content
