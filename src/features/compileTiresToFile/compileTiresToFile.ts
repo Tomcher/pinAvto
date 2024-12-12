@@ -59,7 +59,7 @@ export async function compileTiresToFile(
           AdType: "Товар от производителя",
           ProductType: "Легковые шины",
           Brand: tire.brand[0],
-          Model: tire.model[0],
+          Model: tire.model[0].replace(/CF-(\d+)/, 'CF$1'),
           TireSectionWidth: tire.width[0],
           RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
           TireAspectRatio: tire.height[0],
