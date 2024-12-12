@@ -12,6 +12,7 @@ export async function compileTiresToFile(
   outputFile: string
 ) {
   try {
+    
     let allTires: any[] = [];
 
     // Loop through each input file and read its content
