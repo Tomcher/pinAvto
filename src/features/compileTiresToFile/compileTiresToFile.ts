@@ -62,7 +62,7 @@ export async function compileTiresToFile(
           TireSectionWidth: tire.width[0],
           RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
           TireAspectRatio: tire.height[0],
-          TireType: tire.season[0],
+          TireType: tire.season[0] === "Всесезонная" ? "Всесезонные" : tire.season[0],
           Quantity: "за 1 шт.",
           Condition: "Новое",
           Images: {
