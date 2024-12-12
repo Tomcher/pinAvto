@@ -8,7 +8,8 @@
     "build": "tsc",
     "lint": "npx eslint .",
     "build:docker": "docker build . -t ghcr.io/tomcher/pinavto:latest",
-    "build:push": "npm run build:docker && echo $npm_config_token | docker login ghcr.io -u Tomcher --password-stdin && docker push ghcr.io/tomcher/pinavto:latest"
+    "build:push": "npm run build:docker && echo $npm_config_token | docker login ghcr.io -u Tomcher --password-stdin && docker push ghcr.io/tomcher/pinavto:latest",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +35,7 @@
     "@types/node": "^22.10.1",
     "@types/xml2js": "^0.4.14",
     "eslint": "^9.16.0",
+    "husky": "^9.1.7",
     "prettier": "^3.4.1",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.0"
