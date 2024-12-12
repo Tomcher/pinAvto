@@ -23,7 +23,7 @@ async function scrapeAndCompile() {
 }
 
 cron.schedule('0 9,21 * * *', async () => {
-  console.log('running a task at 9:00 and 21:00');
+  console.log('running a task at 9:00 and 21:00'); 
   await scrapeAndCompile();
 });
 
