@@ -68,7 +68,7 @@ export async function compileTiresToFile(
           Condition: "Новое",
           Images: {
             Image: {
-              $: { url: tire.image[0] },
+              $: { url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg` },
             },
           },
         })),
