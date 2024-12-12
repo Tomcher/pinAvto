@@ -50,29 +50,62 @@ export async function compileTiresToFile(
     const ads = {
       Ads: {
         $: { formatVersion: "3", target: "Avito.ru" },
-        Ad: allTires.map((tire) => ({
-          Id: tire.product_id,
-          Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
-          Category: "Запчасти и аксессуары",
-          Description: `⭐️ ⭐️ ⭐️ ⭐️ ⭐️\nАвтошина ${tire.brand[0]} ${tire.size[0]} ${tire.model[0]} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}, по низким ценам с бесплатной доставкой.\n\n✅ Самая низкая цена в Ставропольском крае!\n\n✅ Большой выбор шин в Ставрополе в наличии.\n\n✅ Большой склад в Ставрополе и 2 склада в Краснодаре.\n\n✅ Доставка по Ставрополю бесплатная. Отправка в регионы ТК и автобусом (при возможности).\n\n✅ Можно оформить в кредит на 3-6 месяцев.\n\n✅ Цена указана при оплате за наличку или переводом на карту. Цена указана за 1шт. при покупке от 4шт.\n\n✅ Остались вопросы? - Пишите нам в личных сообщениях, наши специалисты обязательно помогут вам с выбором.\n\n✅ Не забудьте добавить объявление в «избранное»`,
-          GoodsType: "Шины, диски и колёса",
-          AdType: "Товар от производителя",
-          ProductType: "Легковые шины",
-          Brand: tire.brand[0],
-          Model: tire.model[0].replace(/CF-(\d+)/, 'CF$1'),
-          TireSectionWidth: tire.width[0],
-          RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
-          TireAspectRatio: tire.height[0],
-          TireType: tire.season[0] === "Всесезонная" ? "Всесезонные" : tire.season[0],
-          Quantity: "за 1 шт.",
-          Condition: "Новое",
-          Images: {
-            Image: {
-              $: { url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg` },
-            },
-          },
-        })),
+        Ad: (() => {
+          const seenIds = new Set(); // To store unique product IDs
+          return allTires
+            .filter((tire) => {
+              if (seenIds.has(tire.product_id)) {
+                return false; // Remove the duplicate by skipping it
+              }
+              seenIds.add(tire.product_id); // Add the ID to the set
+              return true; // Keep the unique Ad
+            })
+            .map((tire) => {
+              const model = tire.brand[0] === "Tigar" && tire.model[0] === "HP"
+                ? "High Performance"
+                : tire.model[0].replace(/CF-(\d+)/, 'CF$1');
+      
+              return {
+                Id: tire.product_id,
+                Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
+                Category: "Запчасти и аксессуары",
+                Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
+                GoodsType: "Шины, диски и колёса",
+                AdType: "Товар от производителя",
+                ProductType: "Легковые шины",
+                Brand: tire.brand[0],
+                Model: model,
+                TireSectionWidth: tire.width[0],
+                RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
+                TireAspectRatio: tire.height[0],
+                TireType: (() => {
+                  if (tire.thorn[0] === "Шипованная") {
+                    return "Зимние шипованные";
+                  } else if (tire.thorn[0] === "Нешипованная") {
+                    return "Зимние нешипованные";
+                  } else {
+                    switch (tire.season[0]) {
+                      case "Всесезонная":
+                        return "Всесезонные";
+                      case "Летняя":
+                        return "Летние";
+                      default:
+                        return tire.season[0];
+                    }
+                  }
+                })(),
+                Quantity: "за 1 шт.",
+                Condition: "Новое",
+                Images: {
+                  Image: {
+                    $: { url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg` },
+                  },
+                },
+              };
+            });
+        })(),
       },
+      
     };
 
     // Convert the JavaScript object back to XML
