@@ -5,6 +5,53 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+interface Tire {
+  product_id: string;
+  brand: string[];
+  model: string[];
+  size: string[];
+  artikul: string[];
+  season: string[];
+  thorn: string[];
+  width: string[];
+  height: string[];
+  diameter: string[];
+}
+
+interface Ad {
+  Id: string;
+  Address: string;
+  Category: string;
+  Description: string;
+  GoodsType: string;
+  AdType: string;
+  ProductType: string;
+  Brand: string;
+  Model: string;
+  TireSectionWidth: string;
+  RimDiameter: string;
+  TireAspectRatio: string;
+  TireType: string;
+  Quantity: string;
+  Condition: string;
+  Images: {
+    Image: {
+      $: {
+        url: string;
+      };
+    };
+  };
+}
+
+interface Ads {
+  Ads: {
+    $: {
+      formatVersion: string;
+      target: string;
+    };
+    Ad: Ad[];
+  };
+}
 
 // Define the function to compile <tyre> elements from multiple XML files into one
 export async function compileTiresToFile(
@@ -12,8 +59,7 @@ export async function compileTiresToFile(
   outputFile: string
 ) {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let allTires: any[] = [];
+    let allTires: Tire[] = [];
 
     // Loop through each input file and read its content
     for (const fileName of inputFiles) {
@@ -47,24 +93,26 @@ export async function compileTiresToFile(
     allTires = allTires.map((tire) => ({ ...tire }));
 
     // Create the new XML structure based on the Sample template
-    const ads = {
+    // Create the new XML structure based on the Sample template
+    const ads: Ads = {
       Ads: {
         $: { formatVersion: "3", target: "Avito.ru" },
         Ad: (() => {
-          const seenIds = new Set(); // To store unique product IDs
+          const seenIds = new Set<string>(); // To store unique product IDs
           return allTires
-            .filter((tire) => {
+            .filter((tire: Tire) => {
               if (seenIds.has(tire.product_id)) {
                 return false; // Remove the duplicate by skipping it
               }
               seenIds.add(tire.product_id); // Add the ID to the set
               return true; // Keep the unique Ad
             })
-            .map((tire) => {
-              const model = tire.brand[0] === "Tigar" && tire.model[0] === "HP"
-                ? "High Performance"
-                : tire.model[0].replace(/CF-(\d+)/, 'CF$1');
-      
+            .map((tire: Tire) => {
+              const model =
+                tire.brand[0] === "Tigar" && tire.model[0] === "HP"
+                  ? "High Performance"
+                  : tire.model[0].replace(/CF-(\d+)/, "CF$1");
+
               return {
                 Id: tire.product_id,
                 Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
@@ -98,14 +146,15 @@ export async function compileTiresToFile(
                 Condition: "Новое",
                 Images: {
                   Image: {
-                    $: { url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg` },
+                    $: {
+                      url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
+                    },
                   },
                 },
               };
             });
         })(),
       },
-      
     };
 
     // Convert the JavaScript object back to XML
