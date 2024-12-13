@@ -3,6 +3,12 @@ import * as path from "node:path";
 import { parseStringPromise, Builder } from "xml2js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import flexsearch from "flexsearch";
+
+const index = new flexsearch.Index({
+  tokenize: "full",
+  charset: "extra"
+});
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 interface Tire {
@@ -126,6 +132,17 @@ export async function compileTiresToFile(
       }
     }
 
+    const xmlContent = await fs.readFile(
+      path.join(__dirname, "..", "..", "..", "public", "makes.xml"),
+      "utf-8"
+    );
+    const parsedMakes: { BrandValues: { Brand: string[] } } =
+      await parseStringPromise(xmlContent);
+    let i = 0;
+    for (const make of parsedMakes.BrandValues.Brand) {
+      index.add((i += 1), make.trim());
+    }
+    // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
 
     function calculatePrice(price: string): number {
@@ -162,12 +179,16 @@ export async function compileTiresToFile(
             seenIds.add(tire.product_id[0]); // Add the ID to the set
             return true; // Keep the unique Ad
           });
-          return filtered.map((tire: Tire) => {
+          return filtered.map(async (tire: Tire) => {
             const model =
               tire.brand[0] === "Tigar" && tire.model[0] === "HP"
                 ? "High Performance"
                 : tire.model[0].replace(/CF-(\d+)/, "CF$1");
-
+            const make = await index.search(tire.brand[0])
+            if (!make || !make.length) {
+              console.log("not found:", make)
+            }
+            
             return {
               Id: tire.product_id[0],
               Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
@@ -212,7 +233,8 @@ export async function compileTiresToFile(
       },
     };
 
-    const builder = new Builder();
+    // Convert the JavaScript object back to XML
+    const builder = new Builder({ cdata: true });
     const xml = builder.buildObject(ads);
     const outPath = path.join(
       __dirname,
