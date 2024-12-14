@@ -4,6 +4,7 @@
   "main": "script.js",
   "scripts": {
     "start:dev": "npx tsc && node dist/server.js",
+    "run:dev": "npx tsx src/server.ts",
     "start": "node dist/server.js",
     "build": "tsc",
     "lint": "npx eslint .",
@@ -27,9 +28,12 @@
     "node-cron": "^3.0.3",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^6.1.13",
+    "ollama": "^0.5.11",
     "puppeteer": "^23.10.1",
     "uuid": "^11.0.3",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.24.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
