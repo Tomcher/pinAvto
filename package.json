@@ -30,6 +30,7 @@
     "node-html-parser": "^6.1.13",
     "ollama": "^0.5.11",
     "puppeteer": "^23.10.1",
+    "transliteration": "^2.3.5",
     "uuid": "^11.0.3",
     "xml2js": "^0.6.2",
     "zod": "^3.24.1",
