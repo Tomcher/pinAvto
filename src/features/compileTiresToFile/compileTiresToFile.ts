@@ -5,7 +5,6 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { Search } from "../textSearch/search";
 
-
 const __dirname = dirname(fileURLToPath(import.meta.url));
 interface Tire {
   product_id: string[];
@@ -55,8 +54,6 @@ interface Ads {
   };
 }
 
-
-
 // Define the function to compile <tyre> elements from multiple XML files into one
 export async function compileTiresToFile(
   inputFiles: string[],
@@ -104,11 +101,8 @@ export async function compileTiresToFile(
       return true; // Keep the unique Ad
     });
 
-    const search = new Search({
-      useAI: true,
-      useCache: true
-    });
-    await search.init()
+    const search = new Search();
+    await search.init();
 
     const adsContent: Ad[] = [];
     for (const tire of filtered) {
@@ -116,54 +110,56 @@ export async function compileTiresToFile(
       //   tire.brand[0] === "Tigar" && tire.model[0] === "HP"
       //     ? "High Performance"
       //     : tire.model[0].replace(/CF-(\d+)/, "CF$1");
-      
-      const brand = await search.searchMake(tire.brand[0]);
+
+      // const brand = await search.searchMake(tire.brand[0]);
       const modelResult = await search.searchModel({
-        make: brand,
+        make: tire.brand[0],
         model: tire.model[0],
-        wideSearch: true,
-        skipCache: false,
-        partialSerch: true,
       });
-      adsContent.push({
-        Id: tire.product_id[0],
-        Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
-        Category: "Запчасти и аксессуары",
-        Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${modelResult.model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
-        GoodsType: "Шины, диски и колёса",
-        AdType: "Товар от производителя",
-        ProductType: "Легковые шины",
-        Brand: modelResult.make ?? brand,
-        Model: modelResult.model,
-        TireSectionWidth: tire.width[0],
-        RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
-        TireAspectRatio: tire.height[0],
-        TireType: (() => {
-          if (tire.thorn[0] === "Шипованная") {
-            return "Зимние шипованные";
-          } else if (tire.thorn[0] === "Нешипованная") {
-            return "Зимние нешипованные";
-          } else {
-            switch (tire.season[0]) {
-              case "Всесезонная":
-                return "Всесезонные";
-              case "Летняя":
-                return "Летние";
-              default:
-                return tire.season[0];
+      // if ((counter+=1) % 10 === 0) {
+      //   search.fileCache.write(search.modelCache)
+      // }
+      if (modelResult.make && modelResult.model && !['skip', 'fail'].includes(modelResult.resolution)) {
+        adsContent.push({
+          Id: tire.product_id[0],
+          Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
+          Category: "Запчасти и аксессуары",
+          Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${modelResult.model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
+          GoodsType: "Шины, диски и колёса",
+          AdType: "Товар от производителя",
+          ProductType: "Легковые шины",
+          Brand: modelResult.make ?? tire.brand[0],
+          Model: modelResult.model,
+          TireSectionWidth: tire.width[0],
+          RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
+          TireAspectRatio: tire.height[0],
+          TireType: (() => {
+            if (tire.thorn[0] === "Шипованная") {
+              return "Зимние шипованные";
+            } else if (tire.thorn[0] === "Нешипованная") {
+              return "Зимние нешипованные";
+            } else {
+              switch (tire.season[0]) {
+                case "Всесезонная":
+                  return "Всесезонные";
+                case "Летняя":
+                  return "Летние";
+                default:
+                  return tire.season[0];
+              }
             }
-          }
-        })(),
-        Quantity: "за 1 шт.",
-        Condition: "Новое",
-        Images: {
-          Image: {
-            $: {
-              url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
+          })(),
+          Quantity: "за 1 шт.",
+          Condition: "Новое",
+          Images: {
+            Image: {
+              $: {
+                url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
+              },
             },
           },
-        },
-      });
+        });
+      }
     }
 
     // Create the new XML structure based on the Sample template

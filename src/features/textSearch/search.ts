@@ -3,12 +3,13 @@ import * as path from "node:path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { parseStringPromise } from "xml2js";
-import flexsearch from "flexsearch";
-import { askAI } from "../aiFinder/askAI";
 import { z } from "zod";
 import { transliterate as tr } from "transliteration";
+import { Client } from "@elastic/elasticsearch";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+export type CacheResolutionType = "search" | "fail" | "skip";
 
 interface ParsedModels {
   Shiny: {
@@ -25,11 +26,6 @@ type ModelMake = {
       name: string;
     };
   }[];
-};
-
-type SearchOpts = {
-  useAI: boolean;
-  useCache: boolean;
 };
 
 const SubstituteDataSchema = z.object({
@@ -53,50 +49,16 @@ export class Search {
     buzzwords: [],
   };
 
-  public makeIndex: flexsearch.Index;
-  public makeStore: string[] = [];
-
-  public modelGlobalStore: Array<{ model: string; make: string }> = [];
-  public modelGloblIndex: flexsearch.Index;
-
-  public makeCache: { [key in string]: string } = {};
-
-  //{
-  //  kama: {
-  //    "Кама Grant (HK-241)": {
-  //      make: "KAMA",
-  //      model: "Кама Grant (HK-241)"
-  //    }
-  //  }
-  //}
-  public modelCache: {
-    [key in string]: {
-      [key in string]: {
-        make: string;
-        model: string;
-      };
-    };
-  } = {};
-
-  public modelIndicies: {
-    [key in string]: { ix: flexsearch.Index; store: string[]; make: string };
-  } = {};
-
-  public useAI: boolean;
-  public useCache: boolean;
-  constructor({ useAI, useCache }: SearchOpts) {
-    this.useAI = useAI;
-    this.useCache = useCache;
-    this.modelGloblIndex = new flexsearch.Index({
-      tokenize: "full",
-      charset: "advanced",
-      resolution: 9,
-    });
-    this.makeIndex = new flexsearch.Index({
-      tokenize: "full",
-      charset: "advanced",
-      context: true,
-      resolution: 9,
+  public elasticClient: Client;
+  constructor() {
+    this.elasticClient = new Client({
+      node: "https://top35.ru:9200",
+      auth: {
+        apiKey: "...",
+      },
+      tls: {
+        rejectUnauthorized: false,
+      },
     });
   }
 
@@ -111,10 +73,98 @@ export class Search {
     );
     this.parsedMakes = await parseStringPromise(makesXmlContent);
     this.parsedModels = await parseStringPromise(modelsXmlContent);
+    await this.createIndex();
     await this._generateMakeIndicies();
-    await this._generateModelIndicies();
     await this._generateModelGlobalIndex();
     await this._loadSubstitutionData();
+  }
+  public async createIndex() {
+    const exists = await this.elasticClient.indices.exists({
+      index: "avito-tires",
+    });
+
+    if (exists) {
+      console.log(`Index avito-tires already exists. No action taken.`);
+      return;
+    }
+    try {
+      await this.elasticClient.indices.create({
+        index: "avito-tires",
+        body: {
+          settings: {
+            analysis: {
+              filter: {
+                word_delimiter_filter: {
+                  type: "word_delimiter",
+                  split_on_case_change: true,
+                  split_on_numerics: true,
+                  preserve_original: true,
+                },
+              },
+              char_filter: {
+                punct_filter: {
+                  type: "mapping",
+                  // Convert hyphens into spaces to ensure consistent tokenization
+                  mappings: ["-=> "],
+                },
+              },
+              tokenizer: {
+                my_ngram_tokenizer: {
+                  type: "ngram",
+                  min_gram: 3,
+                  max_gram: 4,
+                  token_chars: ["letter", "digit"],
+                },
+              },
+              analyzer: {
+                my_custom_analyzer: {
+                  type: "custom",
+                  char_filter: ["punct_filter"],
+                  tokenizer: "standard",
+                  filter: ["lowercase", "word_delimiter_filter"],
+                },
+              },
+            },
+          },
+          mappings: {
+            properties: {
+              model: {
+                type: "text",
+                analyzer: "standard",
+                search_analyzer: "standard",
+              },
+              modification: {
+                type: "text",
+                analyzer: "standard",
+                search_analyzer: "standard",
+              },
+              modelTr: {
+                type: "text",
+                analyzer: "standard",
+                search_analyzer: "standard",
+              },
+              makeModel: {
+                type: "text",
+                analyzer: "standard",
+                search_analyzer: "standard",
+              },
+              make: {
+                type: "text",
+                analyzer: "standard",
+              },
+              type: {
+                type: "text",
+                analyzer: "standard",
+              },
+            },
+          },
+        },
+      });
+
+      console.log("Index with custom analyzer created successfully!");
+    } catch (error) {
+      console.error("Error:", error);
+    }
   }
 
   private async _loadSubstitutionData() {
@@ -186,239 +236,151 @@ export class Search {
     const makes = this.parsedMakes.BrandValues.Brand.map((it: string) =>
       it.trim()
     );
-    makes.forEach((make, i) => {
-      this.makeIndex.add(i, make);
-      this.makeIndex.add(i, tr(make));
-      this.makeStore.push(make);
-    });
+    const docs = makes.map((m) => ({ make: m, type: "make", _id: m }));
+    const body = docs.flatMap(({ _id, make, type }) => [
+      { index: { _index: "avito-tires", _id } },
+      { make, type },
+    ]);
+
+    await this.elasticClient.bulk({ body });
   }
 
   private async _generateModelGlobalIndex() {
     if (!this.parsedModels) {
       return;
     }
-    let cursor = 0;
-    this.parsedModels.Shiny.make.forEach((make) => {
+    const docs: {
+      _id: string;
+      make: string;
+      model: string;
+      modification?: string;
+      modelTr: string;
+      makeModel: string;
+      type: string;
+    }[] = [];
+    for (const make of this.parsedModels.Shiny.make) {
       for (const model of make.model) {
-        this.modelGloblIndex.add(cursor, model.$.name);
-        this.modelGloblIndex.add(cursor, tr(model.$.name));
-        this.modelGloblIndex.add(cursor, `${make.$.name} ${model.$.name}`);
-        this.modelGlobalStore.push({
-          make: make.$.name,
-          model: model.$.name,
-        });
-        cursor += 1;
-      }
-    });
-  }
-
-  private async _generateModelIndicies() {
-    if (!this.parsedModels) {
-      return;
-    }
-    this.modelIndicies = this.parsedModels.Shiny.make.reduce<{
-      [key in string]: { ix: flexsearch.Index; store: string[]; make: string };
-    }>((sum, n) => {
-      const ix = new flexsearch.Index({
-        tokenize: "full",
-        charset: "extra",
-        resolution: 9,
-      });
-      sum[n.$.name] = {
-        store: [],
-        ix,
-        make: n.$.name,
-      };
-      n.model.forEach((m, i) => {
-        const nameOrig = m.$.name;
-        const name = nameOrig.toLowerCase();
-        ix.add(i, name);
-        ix.add(i, tr(name));
-        ix.add(i, `${n.$.name.toLowerCase()} ${name}`);
-        sum[n.$.name].store.push(nameOrig);
-      });
-      return sum;
-    }, {});
-  }
-
-  public async wideSearch(model: string, searchWide: boolean = false) {
-    const found = this.modelGloblIndex.search(model.toLowerCase());
-    if (found && found.length > 0) {
-      return found.map((index) => this.modelGlobalStore[index as number]);
-    }
-    if (searchWide) {
-      const split = model.split(" ");
-      if (split.length > 0) {
-        for (let i = 0; i < split.length - 1; i += 1) {
-          const slice = split.slice(i).join(" ");
-          const sf = this.modelGloblIndex.search(slice);
-          if (sf && sf.length) {
-            return sf.map((index) => this.modelGlobalStore[index as number]);
+        const parts = model.$.name.split(" ");
+        let modification: string | undefined = undefined;
+        if (parts.length > 1) {
+          const skip = parts.slice(1);
+          const withNum = skip.find((ch) => /\d/.test(ch));
+          if (withNum) {
+            // console.log("mods: ", model.$.name, " -- ", withNum);
+            modification = withNum;
           }
         }
+        // console.log("ix: ", model.$.name, " -- ", modification);
+        docs.push({
+          _id: `${make.$.name}-${model.$.name}`,
+          make: make.$.name,
+          model: model.$.name,
+          modelTr: tr(model.$.name),
+          modification,
+          makeModel: `${make.$.name} ${model.$.name}`,
+          type: "model",
+        });
       }
     }
+    const body = docs.flatMap(
+      ({ _id, make, makeModel, modelTr, model, type, modification }) => [
+        { index: { _index: "avito-tires", _id } },
+        { make, makeModel, modelTr, model, type, modification },
+      ]
+    );
+    await this.elasticClient.bulk({ body });
   }
-
   public async searchModel({
     make: initMake,
     model: initModel,
-    wideSearch = true,
-    skipCache = false,
-    partialSerch = true,
   }: {
     make: string;
     model: string;
-    wideSearch: boolean;
-    skipCache: boolean;
-    partialSerch: boolean;
-  }): Promise<{ make: string; model: string }> {
-    if (
-      !skipCache &&
-      this.modelCache[initMake] &&
-      this.modelCache[initMake][initModel]
-    ) {
-      return this.modelCache[initMake][initModel];
-    }
-    const { make, model = initModel } = await this.checkSubstitutionData(
-      initMake,
-      initModel
-    );
-    const foundIx = this.modelIndicies[make];
-    if (foundIx) {
-      const { ix, store } = foundIx;
-      const simpleSearch = store.find((s) => s === model);
-      if (simpleSearch) {
-        console.log("simple: ", model);
-        if (!skipCache) {
-          this.modelCache[make] ??= {};
-          this.modelCache[make][model] = { make, model: simpleSearch };
-        }
-        return {
-          make,
-          model: simpleSearch,
-        };
+  }): Promise<{
+    make: string;
+    model: string;
+    resolution: CacheResolutionType;
+  }> {
+    const result = await this.elasticClient.search<{
+      make: string;
+      model: string;
+    }>({
+      index: "avito-tires",
+      body: {
+        query: {
+          bool: {
+            must: [
+              { match: { type: "model" } },
+              {
+                bool: {
+                  should: [
+                    {
+                      multi_match: {
+                        query: `${initModel}`,
+                        fields: [
+                          "model",
+                          "modelTr",
+                          "makeModel^2",
+                          "modification",
+                        ],
+                        fuzziness: "AUTO",
+                      },
+                    },
+                    {
+                      multi_match: {
+                        query: `${initModel.replace(/ /, "")}`,
+                        fields: [
+                          "model",
+                          "modelTr",
+                          "makeModel^2",
+                          "modification",
+                        ],
+                        fuzziness: "AUTO",
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+            should: [
+              {
+                multi_match: {
+                  query: initMake,
+                  fields: ["make^2"],
+                  // fuzziness: "1",
+                },
+              },
+            ],
+            minimum_should_match: 0,
+          },
+        },
+      },
+    });
+    if (result && result.hits.hits.length > 0 && result.hits.hits[0]._source) {
+      const { make, model } = result.hits.hits[0]._source;
+      const second = result.hits.hits[1];
+      const diff_score = second ? (result.hits.hits[0]._score ?? 0) - (second._score ?? 0) : 100
+      console.log(
+        "found: ",
+        make,
+        model,
+        " from: ",
+        initMake,
+        initModel,
+        " score: ",
+        result.hits.hits[0]._score,
+      );
+      if (second && (diff_score < 1 && diff_score > 0)) {
+        console.log(
+          "    very likely:",
+         `${second._source?.make} ${second._source?.model} : ${second._score}, diff: ${diff_score}`
+        )
       }
-      const found = ix.search(model);
-      if (found && found.length) {
-        console.log("found: ", store[found[0] as number], " : ", model);
-        if (!skipCache) {
-          this.modelCache[make] ??= {};
-          this.modelCache[make][model] = {
-            make,
-            model: store[found[0] as number],
-          };
-        }
-        return {
-          make,
-          model: store[found[0] as number],
-        };
-      }
-      if (partialSerch) {
-        const split = model.split(" ");
-        if (split.length > 1) {
-          console.log("  partial search: ", model);
-          let cursor = 0;
-          while (cursor < split.length - 2) {
-            const part = split.slice((cursor += 1));
-            console.log("  seaching for :", part.join(" "));
-            const fp = ix.search(part.join(" "));
-            if (fp && fp.length) {
-              console.log(
-                "  partial found: ",
-                store[fp[0] as number],
-                " : ",
-                model
-              );
-              if (!skipCache) {
-                this.modelCache[make] ??= {};
-                this.modelCache[make][model] = {
-                  make,
-                  model: store[fp[0] as number],
-                };
-              }
-              return {
-                make,
-                model: store[fp[0] as number],
-              };
-            }
-          }
-        }
-      }
-      if (wideSearch) {
-        const entries = await this.wideSearch(model, wideSearch);
-        console.log("found with wide search: ", entries);
-        if (entries && entries.length) {
-          if (!skipCache) {
-            this.modelCache[make] ??= {};
-            this.modelCache[make][model] = {
-              make,
-              model: entries[0].model,
-            };
-          }
-          return entries[0];
-        }
-      }
-
-      if (this.useAI) {
-        console.log("+++ search with AI");
-        const modelSplit = model.toLowerCase().split(" ");
-        const minimalStore = store
-          .map((s) => s.toLowerCase())
-          .filter(
-            (i) =>
-              i.split(" ").filter((ip) => modelSplit.includes(ip)).length > 0
-          );
-        const resp = await askAI(
-          model.toLowerCase(),
-          minimalStore.length > 5 ? minimalStore : store
-        );
-        if (resp.matched_tire) {
-          console.log("AI FOUND!!!: ", resp, " : ", model, minimalStore, make);
-          console.log("verifying hallucianates...");
-          const verify = ix.search(resp.matched_tire);
-          if (verify && verify.length > 0) {
-            if (!skipCache) {
-              this.modelCache[make] ??= {};
-              this.modelCache[make][model] = {
-                make,
-                model: store[verify[0] as number],
-              };
-            }
-            return {
-              make,
-              model: store[verify[0] as number],
-            };
-          } else {
-            console.log("AI NOT FOUND: ", resp, model, store);
-          }
-        }
-      }
-    }
-
-    console.log("not found: ", model, " : ", make);
-    return { make, model };
-  }
-
-  public async searchMake(initMake: string) {
-    if (this.makeCache[initMake]) {
-      return this.makeCache[initMake];
-    }
-    const { make } = await this.checkSubstitutionData(initMake);
-    let found = this.makeIndex.search(make);
-    if (!found || !found.length) {
-      const split = make.split(" ");
-      if (split.length > 0) {
-        for (const chunk of split) {
-          found = this.makeIndex.search(chunk);
-          if (found && found.length) {
-            return this.makeStore[found[0] as number];
-          }
-        }
-      }
-      return make;
+      
+      return { make, model, resolution: "search" };
     } else {
-      return this.makeStore[found[0] as number];
+      console.log(result, initMake, initModel);
+      return { make: "", model: "", resolution: "fail" };
     }
   }
 }

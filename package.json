@@ -5,6 +5,7 @@
   "scripts": {
     "start:dev": "npx tsc && node dist/server.js",
     "run:dev": "npx tsx src/server.ts",
+    "start:runner": "npx tsx src/runner.ts",
     "start": "node dist/server.js",
     "build": "tsc",
     "lint": "npx eslint .",
@@ -18,10 +19,12 @@
   "type": "module",
   "description": "",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.17.0",
     "@types/express": "^5.0.0",
     "@types/node-cron": "^3.0.11",
     "axios": "^1.7.9",
     "cheerio": "^1.0.0",
+    "csv": "^6.3.11",
     "express": "^4.21.2",
     "flexsearch": "^0.7.43",
     "html-entities": "^2.5.2",

@@ -23,9 +23,10 @@ export const askAI = async (search: string, list: string[]): Promise<z.infer<typ
 You are given a target tire model name and a list of available tire model names. Your task is to find the available model name that most closely matches the target model name in a human-intuitive manner (e.g., considering slight spelling differences, minor variations, missing hypens, dashes, ending numbers or abbreviations). If no close or plausible match exists in the given list, you should return null.
 
 Instructions:
-1.  Do not invent or hallucinate any tire models that are not in the provided list.
-2.  Identify the single model from the list that best matches the target name. If you are not sure or the match is weak, return null.
-4.  Return your final answer in JSON format
+1. Do not invent or hallucinate any tire models that are not in the provided list.
+2. Identify the single model from the list that best matches the target name. If you are not sure or the match is weak, return null.
+3. Do not change found match collation
+4. Return your final answer in JSON format
 
 Input:
 Target tire model: "${search}"
@@ -36,7 +37,7 @@ List of available models:
 `;
   console.log('asking: ', msg)
   const response = await ollama.chat({
-    model: "llama3.2:3b-instruct-fp16",
+    model: "llama3.2:1b-instruct-fp16",
     messages: [
       {
         role: "system",
