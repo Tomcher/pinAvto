@@ -54,8 +54,46 @@ interface Ads {
   };
 }
 
+/**
+ * Checks if a file is available at the given URL without downloading it completely.
+ * @param url - The URL of the file to check.
+ * @returns A promise that resolves to true if the file exists (status 200), otherwise false.
+ */
+export async function isFileAvailable(url: string): Promise<boolean> {
+  try {
+    // Send a GET request with a Range header to request only the first byte
+    const response = await fetch(url, {
+      method: "GET",
+      headers: { Range: "bytes=0-0" },
+    });
 
-// Define the function to compile <tyre> elements from multiple XML files into one
+    // If the response is within the range 200–299 or 206 (Partial Content), the file exists
+    return response.status === 200 || response.status === 206;
+  } catch (error) {
+    console.error("Error checking file availability:", error);
+    return false;
+  }
+}
+
+
+
+async function getImageUrls(productId: string): Promise<string[]> {
+  const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}.jpeg`;
+  const fallbackImage = "../../public/tires_mockup.jpg";
+  const staticImage = "../../public/Shop.jpg";
+
+  const imageUrls: string[] = [];
+
+  if (await isFileAvailable(primaryImage)) {
+    imageUrls.push(primaryImage);
+  } else {
+    imageUrls.push(fallbackImage);
+  }
+
+  imageUrls.push(staticImage);
+  return imageUrls;
+}
+
 export async function compileTiresToFile(
   inputFiles: string[],
   outputFile: string
@@ -63,7 +101,6 @@ export async function compileTiresToFile(
   try {
     let allTires: Tire[] = [];
 
-    // Loop through each input file and read its content
     for (const fileName of inputFiles) {
       const filePath = path.join(
         __dirname,
@@ -74,10 +111,8 @@ export async function compileTiresToFile(
         fileName
       );
       const xmlContent = await fs.readFile(filePath, "utf-8");
-      // Parse XML content into JavaScript object
       const parsedData = await parseStringPromise(xmlContent);
 
-      // Extract <tyre> elements, adjusting for the root element of each file
       if (parsedData.OtherTyresVIP) {
         allTires = allTires.concat(parsedData.OtherTyresVIP.tyre || []);
       } else if (parsedData.SummerTyresVIP) {
@@ -91,114 +126,98 @@ export async function compileTiresToFile(
       }
     }
 
-    // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
 
     function calculatePrice(price: string): number {
-      // Clean up the price input by removing spaces
       const cleanedPrice = price.replace(/\s+/g, "");
       const numericPrice = parseFloat(cleanedPrice);
-
-      // Provide a default value if parsing fails
       if (isNaN(numericPrice)) {
         console.warn("Invalid price input, defaulting to 0");
         return 0;
       }
-
-      // Define price ranges with markup calculations
       const ranges: [[number, number], number][] = [
         [[0, 3000], 500],
         [[3001, 5000], 600],
         [[5001, 8000], 750],
         [[8001, 12000], 1000],
       ];
-
       for (const range of ranges) {
         const [limits, markup] = range;
-
         if (numericPrice >= limits[0] && numericPrice <= limits[1]) {
           return numericPrice + markup;
         }
       }
-
       return numericPrice + 1250;
     }
 
-    // Create the new XML structure based on the Sample template
     const ads: Ads = {
       Ads: {
         $: { formatVersion: "3", target: "Avito.ru" },
-        Ad: (() => {
-          const seenIds = new Set<string>(); // To store unique product IDs
-          return allTires
-            .filter((tire: Tire) => {
-              if (seenIds.has(tire.product_id)) {
-                return false; // Remove the duplicate by skipping it
-              }
-              seenIds.add(tire.product_id); // Add the ID to the set
-              return true; // Keep the unique Ad
-            })
-            .map((tire: Tire) => {
-              const model =
-                tire.brand[0] === "Tigar" && tire.model[0] === "HP"
-                  ? "High Performance"
-                  : tire.model[0].replace(/CF-(\d+)/, "CF$1");
-              const imageUrls = [
-                `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
-                "../../public/Shop.jpg",
-                "../../public/tires_mockup.jpg",
-              ];
+        Ad: await Promise.all(
+          (() => {
+            const seenIds = new Set<string>();
+            return allTires
+              .filter((tire: Tire) => {
+                if (seenIds.has(tire.product_id)) {
+                  return false;
+                }
+                seenIds.add(tire.product_id);
+                return true;
+              })
+              .map(async (tire: Tire) => {
+                const model =
+                  tire.brand[0] === "Tigar" && tire.model[0] === "HP"
+                    ? "High Performance"
+                    : tire.model[0].replace(/CF-(\d+)/, "CF$1");
+                const imageUrls = await getImageUrls(tire.product_id);
 
-              return {
-                Id: tire.product_id,
-                Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
-                Category: "Запчасти и аксессуары",
-                Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
-                GoodsType: "Шины, диски и колёса",
-                AdType: "Товар от производителя",
-                ProductType: "Легковые шины",
-                Brand: tire.brand[0],
-                Model: model,
-                TireSectionWidth: tire.width[0],
-                RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
-                TireAspectRatio: tire.height[0],
-                TireType: (() => {
-                  if (tire.thorn[0] === "Шипованная") {
-                    return "Зимние шипованные";
-                  } else if (tire.thorn[0] === "Нешипованная") {
-                    return "Зимние нешипованные";
-                  } else {
-                    switch (tire.season[0]) {
-                      case "Всесезонная":
-                        return "Всесезонные";
-                      case "Летняя":
-                        return "Летние";
-                      default:
-                        return tire.season[0];
+                return {
+                  Id: tire.product_id,
+                  Address:
+                    "Ставропольский край, Ставрополь, Шпаковская ул., 115",
+                  Category: "Запчасти и аксессуары",
+                  Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
+                  GoodsType: "Шины, диски и колёса",
+                  AdType: "Товар от производителя",
+                  ProductType: "Легковые шины",
+                  Brand: tire.brand[0],
+                  Model: model,
+                  TireSectionWidth: tire.width[0],
+                  RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
+                  TireAspectRatio: tire.height[0],
+                  TireType: (() => {
+                    if (tire.thorn[0] === "Шипованная") {
+                      return "Зимние шипованные";
+                    } else if (tire.thorn[0] === "Нешипованная") {
+                      return "Зимние нешипованные";
+                    } else {
+                      switch (tire.season[0]) {
+                        case "Всесезонная":
+                          return "Всесезонные";
+                        case "Летняя":
+                          return "Летние";
+                        default:
+                          return tire.season[0];
+                      }
                     }
-                  }
-                })(),
-                Quantity: "за 1 шт.",
-                Condition: "Новое",
-                Images: {
-                  Image: imageUrls.map((url) => ({
-                    $: { url },
-                  })),
-                },
-
-                Price: calculatePrice(tire.price[0]),
-              };
-            });
-        })(),
+                  })(),
+                  Quantity: "за 1 шт.",
+                  Condition: "Новое",
+                  Images: {
+                    Image: imageUrls.map((url) => ({
+                      $: { url },
+                    })),
+                  },
+                  Price: calculatePrice(tire.price[0]),
+                };
+              });
+          })()
+        ),
       },
     };
 
-    // Convert the JavaScript object back to XML
     const builder = new Builder();
     const xml = builder.buildObject(ads);
-
-    // Write the output XML to the specified file
-
     const outPath = path.join(
       __dirname,
       "..",
@@ -214,5 +233,3 @@ export async function compileTiresToFile(
     console.error("An error occurred while compiling XML files:", error);
   }
 }
-
-// compileTiresToFile(inputFiles, outputFile);

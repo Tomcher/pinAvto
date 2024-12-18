@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 import cron from 'node-cron';
 
 import { compileTiresToFile } from "./features/compileTiresToFile/compileTiresToFile.js";
-import { scrapeWithPuppeteer } from "./features/scrapeWithPuppeteer/scrapeWithPuppeteer.js";
+// import { scrapeWithPuppeteer } from "./features/scrapeWithPuppeteer/scrapeWithPuppeteer.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -18,7 +18,7 @@ const links = [
 ];
 
 async function scrapeAndCompile() {
-  await scrapeWithPuppeteer(links);
+  // await scrapeWithPuppeteer(links);
   await compileTiresToFile(links, "CompiledTires.xml");
 }
 
