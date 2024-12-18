@@ -7,7 +7,7 @@ import flexsearch from "flexsearch";
 
 const index = new flexsearch.Index({
   tokenize: "full",
-  charset: "extra"
+  charset: "extra",
 });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -45,9 +45,9 @@ interface Ad {
     Image: {
       $: {
         url: string;
-      };
-    }[];
-  };
+      }
+    };
+  }[];
 }
 
 interface Ads {
@@ -74,14 +74,14 @@ export async function isFileAvailable(url: string): Promise<boolean> {
     });
 
     // If the response is within the range 200–299 or 206 (Partial Content), the file exists
-    return response.status === 200 || response.status === 206;
+    const found =  response.status === 200 || response.status === 206;
+    if (found) console.log('found image: ', url)
+    return found
   } catch (error) {
     console.error("Error checking file availability:", error);
     return false;
   }
 }
-
-
 
 async function getImageUrls(productId: string): Promise<string[]> {
   const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}.jpeg`;
@@ -145,6 +145,7 @@ export async function compileTiresToFile(
     // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function calculatePrice(price: string): number {
       const cleanedPrice = price.replace(/\s+/g, "");
       const numericPrice = parseFloat(cleanedPrice);
@@ -167,69 +168,71 @@ export async function compileTiresToFile(
       return numericPrice + 1250;
     }
 
+    const seenIds = new Set<string>(); // To store unique product IDs
+    const filtered = allTires.filter((tire: Tire) => {
+      if (seenIds.has(tire.product_id[0])) {
+        return false; // Remove the duplicate by skipping it
+      }
+      seenIds.add(tire.product_id[0]); // Add the ID to the set
+      return true; // Keep the unique Ad
+    });
+
+    const adItems: Ad[] = [];
+    for (const tire of filtered) {
+      const model =
+        tire.brand[0] === "Tigar" && tire.model[0] === "HP"
+          ? "High Performance"
+          : tire.model[0].replace(/CF-(\d+)/, "CF$1");
+      const make = await index.search(tire.brand[0]);
+      if (!make || !make.length) {
+        console.log("not found:", make);
+      }
+
+      adItems.push({
+        Id: tire.product_id[0],
+        Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
+        Category: "Запчасти и аксессуары",
+        Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
+        GoodsType: "Шины, диски и колёса",
+        AdType: "Товар от производителя",
+        ProductType: "Легковые шины",
+        Brand: tire.brand[0],
+        Model: model,
+        TireSectionWidth: tire.width[0],
+        RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
+        TireAspectRatio: tire.height[0],
+        TireType: (() => {
+          if (tire.thorn[0] === "Шипованная") {
+            return "Зимние шипованные";
+          } else if (tire.thorn[0] === "Нешипованная") {
+            return "Зимние нешипованные";
+          } else {
+            switch (tire.season[0]) {
+              case "Всесезонная":
+                return "Всесезонные";
+              case "Летняя":
+                return "Летние";
+              default:
+                return tire.season[0];
+            }
+          }
+        })(),
+        Quantity: "за 1 шт.",
+        Condition: "Новое",
+        Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
+          Image: {
+            $: {
+              url: p,
+            }
+          }
+        })),
+      });
+    }
+
     const ads: Ads = {
       Ads: {
         $: { formatVersion: "3", target: "Avito.ru" },
-        Ad: (() => {
-          const seenIds = new Set<string>(); // To store unique product IDs
-          const filtered = allTires.filter((tire: Tire) => {
-            if (seenIds.has(tire.product_id[0])) {
-              return false; // Remove the duplicate by skipping it
-            }
-            seenIds.add(tire.product_id[0]); // Add the ID to the set
-            return true; // Keep the unique Ad
-          });
-          return filtered.map(async (tire: Tire) => {
-            const model =
-              tire.brand[0] === "Tigar" && tire.model[0] === "HP"
-                ? "High Performance"
-                : tire.model[0].replace(/CF-(\d+)/, "CF$1");
-            const make = await index.search(tire.brand[0])
-            if (!make || !make.length) {
-              console.log("not found:", make)
-            }
-            
-            return {
-              Id: tire.product_id[0],
-              Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
-              Category: "Запчасти и аксессуары",
-              Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
-              GoodsType: "Шины, диски и колёса",
-              AdType: "Товар от производителя",
-              ProductType: "Легковые шины",
-              Brand: tire.brand[0],
-              Model: model,
-              TireSectionWidth: tire.width[0],
-              RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
-              TireAspectRatio: tire.height[0],
-              TireType: (() => {
-                if (tire.thorn[0] === "Шипованная") {
-                  return "Зимние шипованные";
-                } else if (tire.thorn[0] === "Нешипованная") {
-                  return "Зимние нешипованные";
-                } else {
-                  switch (tire.season[0]) {
-                    case "Всесезонная":
-                      return "Всесезонные";
-                    case "Летняя":
-                      return "Летние";
-                    default:
-                      return tire.season[0];
-                  }
-                }
-              })(),
-              Quantity: "за 1 шт.",
-              Condition: "Новое",
-              Images: {
-                Image: {
-                  $: {
-                    url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
-                  },
-                },
-              },
-            };
-          });
-        })(),
+        Ad: adItems,
       },
     };
 
