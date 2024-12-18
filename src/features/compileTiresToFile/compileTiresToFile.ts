@@ -16,6 +16,7 @@ interface Tire {
   width: string[];
   height: string[];
   diameter: string[];
+  price: string[];
 }
 
 interface Ad {
@@ -39,7 +40,7 @@ interface Ad {
       $: {
         url: string;
       };
-    };
+    }[];
   };
 }
 
@@ -52,6 +53,7 @@ interface Ads {
     Ad: Ad[];
   };
 }
+
 
 // Define the function to compile <tyre> elements from multiple XML files into one
 export async function compileTiresToFile(
@@ -92,7 +94,36 @@ export async function compileTiresToFile(
     // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
 
-    // Create the new XML structure based on the Sample template
+    function calculatePrice(price: string): number {
+      // Clean up the price input by removing spaces
+      const cleanedPrice = price.replace(/\s+/g, "");
+      const numericPrice = parseFloat(cleanedPrice);
+
+      // Provide a default value if parsing fails
+      if (isNaN(numericPrice)) {
+        console.warn("Invalid price input, defaulting to 0");
+        return 0;
+      }
+
+      // Define price ranges with markup calculations
+      const ranges: [[number, number], number][] = [
+        [[0, 3000], 500],
+        [[3001, 5000], 600],
+        [[5001, 8000], 750],
+        [[8001, 12000], 1000],
+      ];
+
+      for (const range of ranges) {
+        const [limits, markup] = range;
+
+        if (numericPrice >= limits[0] && numericPrice <= limits[1]) {
+          return numericPrice + markup;
+        }
+      }
+
+      return numericPrice + 1250;
+    }
+
     // Create the new XML structure based on the Sample template
     const ads: Ads = {
       Ads: {
@@ -112,6 +143,11 @@ export async function compileTiresToFile(
                 tire.brand[0] === "Tigar" && tire.model[0] === "HP"
                   ? "High Performance"
                   : tire.model[0].replace(/CF-(\d+)/, "CF$1");
+              const imageUrls = [
+                `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
+                "../../public/Shop.jpg",
+                "../../public/tires_mockup.jpg",
+              ];
 
               return {
                 Id: tire.product_id,
@@ -145,12 +181,12 @@ export async function compileTiresToFile(
                 Quantity: "за 1 шт.",
                 Condition: "Новое",
                 Images: {
-                  Image: {
-                    $: {
-                      url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
-                    },
-                  },
+                  Image: imageUrls.map((url) => ({
+                    $: { url },
+                  })),
                 },
+
+                Price: calculatePrice(tire.price[0]),
               };
             });
         })(),
