@@ -33,7 +33,6 @@ jobs:
         env:
           HOST: ${{ vars.DEPLOY_HOST }}
           USER: ${{ vars.DEPLOY_USER }}
-          KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           ssh $USER@$HOST -o "StrictHostKeyChecking no" <<EOF
             docker login ghcr.io -u ${{ github.repository_owner }} --password ${{ secrets.DOCKERHUB_TOKEN }}
@@ -41,5 +40,5 @@ jobs:
             docker pull ghcr.io/tomcher/pinavto:latest
             docker stop pinavto || true
             docker rm pinavto || true
-            docker run -d -p "3000:3000" -v ./public:/app/public --name pinavto ghcr.io/tomcher/pinavto:latest
+            docker run -d -p "3000:3000" -v ./public:/app/public -e ELASTIC_HOST=${{vars.ELASTIC_HOST}} -e ELASTIC_KEY=${{ secrets.ELASTIC_KEY }} --name pinavto ghcr.io/tomcher/pinavto:latest
           EOF

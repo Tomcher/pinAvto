@@ -6,6 +6,9 @@ import { parseStringPromise } from "xml2js";
 import { z } from "zod";
 import { transliterate as tr } from "transliteration";
 import { Client } from "@elastic/elasticsearch";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -52,9 +55,9 @@ export class Search {
   public elasticClient: Client;
   constructor() {
     this.elasticClient = new Client({
-      node: "https://top35.ru:9200",
+      node: process.env.ELASTIC_HOST,
       auth: {
-        apiKey: "...",
+        apiKey: process.env.ELASTIC_KEY ?? "",
       },
       tls: {
         rejectUnauthorized: false,
