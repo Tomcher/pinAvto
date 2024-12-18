@@ -3,12 +3,7 @@ import * as path from "node:path";
 import { parseStringPromise, Builder } from "xml2js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import flexsearch from "flexsearch";
-
-const index = new flexsearch.Index({
-  tokenize: "full",
-  charset: "extra"
-});
+import { Search } from "../textSearch/search";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 interface Tire {
@@ -94,84 +89,85 @@ export async function compileTiresToFile(
       }
     }
 
-    const xmlContent = await fs.readFile(
-      path.join(__dirname, "..", "..", "..", "public", "makes.xml"),
-      "utf-8"
-    );
-    const parsedMakes: { BrandValues: { Brand: string[] } } =
-      await parseStringPromise(xmlContent);
-    let i = 0;
-    for (const make of parsedMakes.BrandValues.Brand) {
-      index.add((i += 1), make.trim());
-    }
     // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
+
+    const seenIds = new Set<string>(); // To store unique product IDs
+    const filtered = allTires.filter((tire: Tire) => {
+      if (seenIds.has(tire.product_id[0])) {
+        return false; // Remove the duplicate by skipping it
+      }
+      seenIds.add(tire.product_id[0]); // Add the ID to the set
+      return true; // Keep the unique Ad
+    });
+
+    const search = new Search();
+    await search.init();
+
+    const adsContent: Ad[] = [];
+    for (const tire of filtered) {
+      // const model =
+      //   tire.brand[0] === "Tigar" && tire.model[0] === "HP"
+      //     ? "High Performance"
+      //     : tire.model[0].replace(/CF-(\d+)/, "CF$1");
+
+      // const brand = await search.searchMake(tire.brand[0]);
+      const modelResult = await search.searchModel({
+        make: tire.brand[0],
+        model: tire.model[0],
+      });
+      // if ((counter+=1) % 10 === 0) {
+      //   search.fileCache.write(search.modelCache)
+      // }
+      if (modelResult.make && modelResult.model && !['skip', 'fail'].includes(modelResult.resolution)) {
+        adsContent.push({
+          Id: tire.product_id[0],
+          Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
+          Category: "Запчасти и аксессуары",
+          Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${modelResult.model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
+          GoodsType: "Шины, диски и колёса",
+          AdType: "Товар от производителя",
+          ProductType: "Легковые шины",
+          Brand: modelResult.make ?? tire.brand[0],
+          Model: modelResult.model,
+          TireSectionWidth: tire.width[0],
+          RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
+          TireAspectRatio: tire.height[0],
+          TireType: (() => {
+            if (tire.thorn[0] === "Шипованная") {
+              return "Зимние шипованные";
+            } else if (tire.thorn[0] === "Нешипованная") {
+              return "Зимние нешипованные";
+            } else {
+              switch (tire.season[0]) {
+                case "Всесезонная":
+                  return "Всесезонные";
+                case "Летняя":
+                  return "Летние";
+                default:
+                  return tire.season[0];
+              }
+            }
+          })(),
+          Quantity: "за 1 шт.",
+          Condition: "Новое",
+          Images: {
+            Image: {
+              $: {
+                url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
+              },
+            },
+          },
+        });
+      }
+    }
 
     // Create the new XML structure based on the Sample template
     // Create the new XML structure based on the Sample template
     const ads: Ads = {
       Ads: {
         $: { formatVersion: "3", target: "Avito.ru" },
-        Ad: (() => {
-          const seenIds = new Set<string>(); // To store unique product IDs
-          const filtered = allTires.filter((tire: Tire) => {
-            if (seenIds.has(tire.product_id[0])) {
-              return false; // Remove the duplicate by skipping it
-            }
-            seenIds.add(tire.product_id[0]); // Add the ID to the set
-            return true; // Keep the unique Ad
-          });
-          return filtered.map(async (tire: Tire) => {
-            const model =
-              tire.brand[0] === "Tigar" && tire.model[0] === "HP"
-                ? "High Performance"
-                : tire.model[0].replace(/CF-(\d+)/, "CF$1");
-            const make = await index.search(tire.brand[0])
-            if (!make || !make.length) {
-              console.log("not found:", make)
-            }
-            
-            return {
-              Id: tire.product_id[0],
-              Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
-              Category: "Запчасти и аксессуары",
-              Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
-              GoodsType: "Шины, диски и колёса",
-              AdType: "Товар от производителя",
-              ProductType: "Легковые шины",
-              Brand: tire.brand[0],
-              Model: model,
-              TireSectionWidth: tire.width[0],
-              RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
-              TireAspectRatio: tire.height[0],
-              TireType: (() => {
-                if (tire.thorn[0] === "Шипованная") {
-                  return "Зимние шипованные";
-                } else if (tire.thorn[0] === "Нешипованная") {
-                  return "Зимние нешипованные";
-                } else {
-                  switch (tire.season[0]) {
-                    case "Всесезонная":
-                      return "Всесезонные";
-                    case "Летняя":
-                      return "Летние";
-                    default:
-                      return tire.season[0];
-                  }
-                }
-              })(),
-              Quantity: "за 1 шт.",
-              Condition: "Новое",
-              Images: {
-                Image: {
-                  $: {
-                    url: `https://b2b.pin-avto.ru/public/photos/format/${tire.product_id}.jpeg`,
-                  },
-                },
-              },
-            };
-          });
-        })(),
+        Ad: adsContent,
       },
     };
 

@@ -1,0 +1,12 @@
+{
+  "makes": {
+    "BELSHINA": "Белшина",
+    "Нижнекамск": "КАМА (Нижнекамский шинный завод)"
+  },
+  "models": {
+    "viatti": {
+      "make": "Viatti"
+    }
+  },
+  "buzzwords": ["FRICTION"]
+}
