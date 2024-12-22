@@ -48,6 +48,7 @@ interface Ad {
       }
     };
   }[];
+  Price: number;
 }
 
 interface Ads {
@@ -132,16 +133,16 @@ export async function compileTiresToFile(
       }
     }
 
-    const xmlContent = await fs.readFile(
-      path.join(__dirname, "..", "..", "..", "public", "makes.xml"),
-      "utf-8"
-    );
-    const parsedMakes: { BrandValues: { Brand: string[] } } =
-      await parseStringPromise(xmlContent);
-    let i = 0;
-    for (const make of parsedMakes.BrandValues.Brand) {
-      index.add((i += 1), make.trim());
-    }
+    // const xmlContent = await fs.readFile(
+    //   path.join(__dirname, "..", "..", "..", "public", "makes.xml"),
+    //   "utf-8"
+    // );
+    // const parsedMakes: { BrandValues: { Brand: string[] } } =
+    //   await parseStringPromise(xmlContent);
+    // let i = 0;
+    // for (const make of parsedMakes.BrandValues.Brand) {
+    //   index.add((i += 1), make.trim());
+    // }
     // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
 
@@ -226,6 +227,7 @@ export async function compileTiresToFile(
             }
           }
         })),
+        Price: calculatePrice(tire.price[0])
       });
     }
 
