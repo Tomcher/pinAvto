@@ -15,8 +15,8 @@
       "cwd": "${workspaceFolder}",
       "skipFiles": ["<node_internals>/**"],
       "outFiles": ["${workspaceFolder}/**/*.js"],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-    },
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen"
+    }
   ]
 }
