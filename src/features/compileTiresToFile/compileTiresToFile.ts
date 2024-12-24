@@ -23,6 +23,10 @@ interface Tire {
   height: string[];
   diameter: string[];
   price: string[];
+  sklad1?: string[];
+  sklad2?: string[];
+  sklad3?: string[];
+  sklad5?: string[];
 }
 
 interface Ad {
@@ -41,13 +45,13 @@ interface Ad {
   TireType: string;
   Quantity: string;
   Condition: string;
-  Images: {
-    Image: {
-      $: {
-        url: string;
-      }
-    };
-  }[];
+  // Images: {
+  //   Image: {
+  //     $: {
+  //       url: string;
+  //     }
+  //   };
+  // }[];
   Price: number;
 }
 
@@ -75,31 +79,31 @@ export async function isFileAvailable(url: string): Promise<boolean> {
     });
 
     // If the response is within the range 200–299 or 206 (Partial Content), the file exists
-    const found =  response.status === 200 || response.status === 206;
-    if (found) console.log('found image: ', url)
-    return found
+    const found = response.status === 200 || response.status === 206;
+    if (found) console.log("found image: ", url);
+    return found;
   } catch (error) {
     console.error("Error checking file availability:", error);
     return false;
   }
 }
 
-async function getImageUrls(productId: string): Promise<string[]> {
-  const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}.jpeg`;
-  const fallbackImage = "../../public/tires_mockup.jpg";
-  const staticImage = "../../public/Shop.jpg";
+// async function getImageUrls(productId: string): Promise<string[]> {
+//   const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}.jpeg`;
+//   const fallbackImage = "../../public/tires_mockup.jpg";
+//   const staticImage = "../../public/Shop.jpg";
 
-  const imageUrls: string[] = [];
+//   const imageUrls: string[] = [];
 
-  if (await isFileAvailable(primaryImage)) {
-    imageUrls.push(primaryImage);
-  } else {
-    imageUrls.push(fallbackImage);
-  }
+//   if (await isFileAvailable(primaryImage)) {
+//     imageUrls.push(primaryImage);
+//   } else {
+//     imageUrls.push(fallbackImage);
+//   }
 
-  imageUrls.push(staticImage);
-  return imageUrls;
-}
+//   imageUrls.push(staticImage);
+//   return imageUrls;
+// }
 
 export async function compileTiresToFile(
   inputFiles: string[],
@@ -189,11 +193,39 @@ export async function compileTiresToFile(
         console.log("not found:", make);
       }
 
+      const sklad1Qty = parseInt(tire.sklad1?.[0] || "0", 10);
+      const sklad2Qty = parseInt(tire.sklad2?.[0] || "0", 10);
+      const sklad3Qty = parseInt(tire.sklad3?.[0] || "0", 10);
+      const sklad5Qty = parseInt(tire.sklad5?.[0] || "0", 10);
+
+      // Sum of Краснодар Sklads
+      const krasnodarSum = sklad1Qty + sklad2Qty + sklad3Qty;
+
+      // Check if there are stocks in Краснодар sklads
+      const hasKrasnodarStock = krasnodarSum > 0;
+
+      // Check if there are stocks in Sтаврополь
+      const hasStavropolStock = sklad5Qty > 0;
+
+      // Build additional description based on stocks
+      let stockDescription = "";
+      if (hasKrasnodarStock) {
+        stockDescription += `Доступно на складах Краснодар Склад 1, Краснодар Склад 2, Краснодар Склад 3 (Всего: ${krasnodarSum} шт.). `;
+      }
+      if (hasStavropolStock) {
+        stockDescription += `Также доступно на складе г.Ставрополь, пр. Кулакова 18 (${sklad5Qty} шт.).`;
+      }
+
+      // Only include stockDescription if there's relevant stock
+      if (stockDescription) {
+        stockDescription = `\n${stockDescription}`;
+      }
+
       adItems.push({
         Id: tire.product_id[0],
         Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
         Category: "Запчасти и аксессуары",
-        Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}`,
+        Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}${stockDescription}`,
         GoodsType: "Шины, диски и колёса",
         AdType: "Товар от производителя",
         ProductType: "Легковые шины",
@@ -220,14 +252,14 @@ export async function compileTiresToFile(
         })(),
         Quantity: "за 1 шт.",
         Condition: "Новое",
-        Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
-          Image: {
-            $: {
-              url: p,
-            }
-          }
-        })),
-        Price: calculatePrice(tire.price[0])
+        // Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
+        //   Image: {
+        //     $: {
+        //       url: p,
+        //     }
+        //   }
+        // })),
+        Price: calculatePrice(tire.price[0]),
       });
     }
 
