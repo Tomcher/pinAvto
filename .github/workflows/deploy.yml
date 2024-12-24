@@ -36,5 +36,5 @@ jobs:
             docker pull ghcr.io/tomcher/pinavto:latest
             docker stop pinavto || true
             docker rm pinavto || true
-            docker run -d -p "3000:3000" -v ./public:/app/public -e DEPLOY_URL=${{vars.DEPLOY_URL}} -e ELASTIC_HOST=${{vars.ELASTIC_HOST}} -e ELASTIC_KEY=${{ secrets.ELASTIC_KEY }} --name pinavto ghcr.io/tomcher/pinavto:latest
+            docker run -d -p "3000:3000" -v ./public:/app/public -e SITE_URL=${{vars.SITE_URL}} -e ELASTIC_HOST=${{vars.ELASTIC_HOST}} -e ELASTIC_KEY=${{ secrets.ELASTIC_KEY }} --name pinavto ghcr.io/tomcher/pinavto:latest
           EOF

@@ -95,8 +95,8 @@ export async function isFileAvailable(urls: string[], exts: string[] = ["jpeg", 
 async function getImageUrls(productId: string): Promise<string[]> {
   const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}`;
   const transliteratedImage = `https://b2b.pin-avto.ru/public/photos/format/${tr(productId)}`
-  const fallbackImage = `${process.env.DEPLOY_URL}/tires_mockup.jpg`;
-  const staticImage = `${process.env.DEPLOY_URL}/Shop.jpg`;
+  const fallbackImage = `${process.env.SITE_URL}/tires_mockup.jpg`;
+  const staticImage = `${process.env.SITE_URL}/Shop.jpg`;
 
   const imageUrls: string[] = [];
   const imageFound = await isFileAvailable([primaryImage, transliteratedImage]);
