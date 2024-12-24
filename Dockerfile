@@ -4,6 +4,7 @@ WORKDIR /app
 RUN mkdir downloads
 RUN mkdir public
 COPY ./src/ src/
+COPY ./settings/ settings/
 COPY package-lock.json package.json tsconfig.json ./
 RUN npm i
 RUN npm run build
