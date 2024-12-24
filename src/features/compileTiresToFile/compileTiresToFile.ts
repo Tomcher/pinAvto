@@ -3,7 +3,7 @@ import * as path from "node:path";
 import { parseStringPromise, Builder } from "xml2js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-import { Search } from "../textSearch/search";
+import { Search } from "../textSearch/search.js";
 import { transliterate as tr } from "transliteration";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -118,7 +118,6 @@ const cleanUpAspectRatio = (aspectRatio: string): string => {
 }
 
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function calculatePrice(price: string): number {
   const cleanedPrice = price.replace(/\s+/g, "");
   const numericPrice = parseFloat(cleanedPrice);
