@@ -3,7 +3,8 @@ import * as path from "node:path";
 import { parseStringPromise, Builder } from "xml2js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-// import { Search } from "../textSearch/search";
+import { Search } from "../textSearch/search";
+import { transliterate as tr } from "transliteration";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 interface Tire {
@@ -45,8 +46,8 @@ interface Ad {
       $: {
         url: string;
       }
-    };
-  }[];
+    }[];
+  };
   Price: number;
 }
 
@@ -104,6 +105,16 @@ async function getImageUrls(productId: string): Promise<string[]> {
 
   imageUrls.push(staticImage);
   return imageUrls;
+}
+
+const cleanUpAspectRatio = (aspectRatio: string): string => {
+  if (aspectRatio.indexOf("x") > -1) {
+    return aspectRatio.split("x")[1];
+  }
+  if (aspectRatio.indexOf("х") > -1) {
+    return aspectRatio.split("х")[1];
+  }
+  return aspectRatio
 }
 
 
@@ -173,16 +184,16 @@ export async function compileTiresToFile(
       seenIds.add(tire.product_id[0]); // Add the ID to the set
       return true; // Keep the unique Ad
     });
+    const search = new Search();
+    await search.init();
 
     const adItems: Ad[] = [];
     for (const tire of filtered) {
-      const model =
-        tire.brand[0] === "Tigar" && tire.model[0] === "HP"
-          ? "High Performance"
-          : tire.model[0].replace(/CF-(\d+)/, "CF$1");
-      const make = await index.search(tire.brand[0]);
-      if (!make || !make.length) {
-        console.log("not found:", make);
+      const {make, model, resolution} = await search.searchModel({make: tire.brand[0], model: tire.model[0]});
+
+      if (["skip", "fail"].includes(resolution)){
+        console.log("Skipping tire with no model:", tire.product_id[0]);
+        continue
       }
 
       const sklad1Qty = parseInt(tire.sklad1?.[0] || "0", 10);
@@ -214,6 +225,7 @@ export async function compileTiresToFile(
       }
 
       if (!hasKrasnodarStock && !hasStavropolStock) {
+        console.log("Skipping tire with no stock:", tire.product_id[0]);
         continue;
       }
 
@@ -225,11 +237,11 @@ export async function compileTiresToFile(
         GoodsType: "Шины, диски и колёса",
         AdType: "Товар от производителя",
         ProductType: "Легковые шины",
-        Brand: tire.brand[0],
+        Brand: make,
         Model: model,
         TireSectionWidth: tire.width[0],
         RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
-        TireAspectRatio: tire.height[0],
+        TireAspectRatio: cleanUpAspectRatio(tire.height[0]),
         TireType: (() => {
           if (tire.thorn[0] === "Шипованная") {
             return "Зимние шипованные";
@@ -248,13 +260,13 @@ export async function compileTiresToFile(
         })(),
         Quantity: "за 1 шт.",
         Condition: "Новое",
-        Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
-          Image: {
+        Images: {
+          Image: ( await getImageUrls(tire.product_id[0])).map((p) => ({
             $: {
               url: p,
             }
-          }
-        })),
+          }))
+        },
         Price: calculatePrice(tire.price[0]),
       });
     }
