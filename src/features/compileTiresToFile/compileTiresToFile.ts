@@ -4,6 +4,7 @@ import { parseStringPromise, Builder } from "xml2js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import flexsearch from "flexsearch";
+import { transliterate as tr } from "transliteration";
 
 const index = new flexsearch.Index({
   tokenize: "full",
@@ -45,13 +46,13 @@ interface Ad {
   TireType: string;
   Quantity: string;
   Condition: string;
-  // Images: {
-  //   Image: {
-  //     $: {
-  //       url: string;
-  //     }
-  //   };
-  // }[];
+  Images: {
+    Image: {
+      $: {
+        url: string;
+      }
+    };
+  }[];
   Price: number;
 }
 
@@ -70,40 +71,70 @@ interface Ads {
  * @param url - The URL of the file to check.
  * @returns A promise that resolves to true if the file exists (status 200), otherwise false.
  */
-export async function isFileAvailable(url: string): Promise<boolean> {
-  try {
-    // Send a GET request with a Range header to request only the first byte
-    const response = await fetch(url, {
-      method: "GET",
-      headers: { Range: "bytes=0-0" },
-    });
-
-    // If the response is within the range 200–299 or 206 (Partial Content), the file exists
-    const found = response.status === 200 || response.status === 206;
-    if (found) console.log("found image: ", url);
-    return found;
-  } catch (error) {
-    console.error("Error checking file availability:", error);
-    return false;
+export async function isFileAvailable(urls: string[], exts: string[] = ["jpeg", "png"]): Promise<boolean | string> {
+  for (const url of urls) {
+    for (const ext of exts) {
+      try {
+        const tryUrl = `${url}.${ext}`;
+        const response = await fetch(tryUrl, {
+          method: "GET",
+          headers: { Range: "bytes=0-0" },
+        });
+        const found = response.status === 200 || response.status === 206;
+        if (found) {
+          console.log("found image: ", tryUrl);
+          return tryUrl;
+        }
+      } catch (error) {
+        console.error("Error checking file availability:", error);
+      }    
+    }
   }
+  return false;
 }
 
-// async function getImageUrls(productId: string): Promise<string[]> {
-//   const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}.jpeg`;
-//   const fallbackImage = "../../public/tires_mockup.jpg";
-//   const staticImage = "../../public/Shop.jpg";
+async function getImageUrls(productId: string): Promise<string[]> {
+  const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}`;
+  const transliteratedImage = `https://b2b.pin-avto.ru/public/photos/format/${tr(productId)}`
+  const fallbackImage = "../../public/tires_mockup.jpg";
+  const staticImage = "../../public/Shop.jpg";
 
-//   const imageUrls: string[] = [];
+  const imageUrls: string[] = [];
+  const imageFound = await isFileAvailable([primaryImage, transliteratedImage]);
 
-//   if (await isFileAvailable(primaryImage)) {
-//     imageUrls.push(primaryImage);
-//   } else {
-//     imageUrls.push(fallbackImage);
-//   }
+  if (imageFound && typeof imageFound === "string") {
+    imageUrls.push(imageFound);
+  } else {
+    imageUrls.push(fallbackImage);
+  }
 
-//   imageUrls.push(staticImage);
-//   return imageUrls;
-// }
+  imageUrls.push(staticImage);
+  return imageUrls;
+}
+
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function calculatePrice(price: string): number {
+  const cleanedPrice = price.replace(/\s+/g, "");
+  const numericPrice = parseFloat(cleanedPrice);
+  if (isNaN(numericPrice)) {
+    console.warn("Invalid price input, defaulting to 0");
+    return 0;
+  }
+  const ranges: [[number, number], number][] = [
+    [[0, 3000], 500],
+    [[3001, 5000], 600],
+    [[5001, 8000], 750],
+    [[8001, 12000], 1000],
+  ];
+  for (const range of ranges) {
+    const [limits, markup] = range;
+    if (numericPrice >= limits[0] && numericPrice <= limits[1]) {
+      return numericPrice + markup;
+    }
+  }
+  return numericPrice + 1250;
+}
 
 export async function compileTiresToFile(
   inputFiles: string[],
@@ -149,29 +180,6 @@ export async function compileTiresToFile(
     // }
     // Add UUID to each tire
     allTires = allTires.map((tire) => ({ ...tire }));
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    function calculatePrice(price: string): number {
-      const cleanedPrice = price.replace(/\s+/g, "");
-      const numericPrice = parseFloat(cleanedPrice);
-      if (isNaN(numericPrice)) {
-        console.warn("Invalid price input, defaulting to 0");
-        return 0;
-      }
-      const ranges: [[number, number], number][] = [
-        [[0, 3000], 500],
-        [[3001, 5000], 600],
-        [[5001, 8000], 750],
-        [[8001, 12000], 1000],
-      ];
-      for (const range of ranges) {
-        const [limits, markup] = range;
-        if (numericPrice >= limits[0] && numericPrice <= limits[1]) {
-          return numericPrice + markup;
-        }
-      }
-      return numericPrice + 1250;
-    }
 
     const seenIds = new Set<string>(); // To store unique product IDs
     const filtered = allTires.filter((tire: Tire) => {
@@ -221,6 +229,10 @@ export async function compileTiresToFile(
         stockDescription = `\n${stockDescription}`;
       }
 
+      if (!hasKrasnodarStock && !hasStavropolStock) {
+        continue;
+      }
+
       adItems.push({
         Id: tire.product_id[0],
         Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
@@ -252,13 +264,13 @@ export async function compileTiresToFile(
         })(),
         Quantity: "за 1 шт.",
         Condition: "Новое",
-        // Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
-        //   Image: {
-        //     $: {
-        //       url: p,
-        //     }
-        //   }
-        // })),
+        Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
+          Image: {
+            $: {
+              url: p,
+            }
+          }
+        })),
         Price: calculatePrice(tire.price[0]),
       });
     }
