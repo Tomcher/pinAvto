@@ -6,6 +6,10 @@ import { fileURLToPath } from "url";
 import { Search } from "../textSearch/search.js";
 import { transliterate as tr } from "transliteration";
 
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 interface Tire {
   product_id: string[];
@@ -91,8 +95,8 @@ export async function isFileAvailable(urls: string[], exts: string[] = ["jpeg", 
 async function getImageUrls(productId: string): Promise<string[]> {
   const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}`;
   const transliteratedImage = `https://b2b.pin-avto.ru/public/photos/format/${tr(productId)}`
-  const fallbackImage = "../../public/tires_mockup.jpg";
-  const staticImage = "../../public/Shop.jpg";
+  const fallbackImage = `${process.env.DEPLOY_URL}/tires_mockup.jpg`;
+  const staticImage = `${process.env.DEPLOY_URL}/Shop.jpg`;
 
   const imageUrls: string[] = [];
   const imageFound = await isFileAvailable([primaryImage, transliteratedImage]);
