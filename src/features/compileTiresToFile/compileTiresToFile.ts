@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 import { Search } from "../textSearch/search.js";
 import { transliterate as tr } from "transliteration";
 
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 dotenv.config();
 
@@ -49,7 +49,7 @@ interface Ad {
     Image: {
       $: {
         url: string;
-      }
+      };
     }[];
   };
   Price: number;
@@ -70,7 +70,10 @@ interface Ads {
  * @param url - The URL of the file to check.
  * @returns A promise that resolves to true if the file exists (status 200), otherwise false.
  */
-export async function isFileAvailable(urls: string[], exts: string[] = ["jpeg", "png"]): Promise<boolean | string> {
+export async function isFileAvailable(
+  urls: string[],
+  exts: string[] = ["jpeg", "png"]
+): Promise<boolean | string> {
   for (const url of urls) {
     for (const ext of exts) {
       try {
@@ -86,7 +89,7 @@ export async function isFileAvailable(urls: string[], exts: string[] = ["jpeg", 
         }
       } catch (error) {
         console.error("Error checking file availability:", error);
-      }    
+      }
     }
   }
   return false;
@@ -94,9 +97,9 @@ export async function isFileAvailable(urls: string[], exts: string[] = ["jpeg", 
 
 async function getImageUrls(productId: string): Promise<string[]> {
   const primaryImage = `https://b2b.pin-avto.ru/public/photos/format/${productId}`;
-  const transliteratedImage = `https://b2b.pin-avto.ru/public/photos/format/${tr(productId)}`
+  const transliteratedImage = `https://b2b.pin-avto.ru/public/photos/format/${tr(productId)}`;
   const fallbackImage = `${process.env.SITE_URL}/tires_mockup.jpg`;
-  const staticImage = `${process.env.SITE_URL}/Shop.jpg`;
+  const staticImage = `https://i.ibb.co/h9czXsS/Whats-App-Image-2024-12-25-at-17-04-32-d7247638.jpg`;
 
   const imageUrls: string[] = [];
   const imageFound = await isFileAvailable([primaryImage, transliteratedImage]);
@@ -118,9 +121,8 @@ const cleanUpAspectRatio = (aspectRatio: string): string => {
   if (aspectRatio.indexOf("х") > -1) {
     return aspectRatio.split("х")[1];
   }
-  return aspectRatio
-}
-
+  return aspectRatio;
+};
 
 function calculatePrice(price: string): number {
   const cleanedPrice = price.replace(/\s+/g, "");
@@ -192,11 +194,14 @@ export async function compileTiresToFile(
 
     const adItems: Ad[] = [];
     for (const tire of filtered) {
-      const {make, model, resolution} = await search.searchModel({make: tire.brand[0], model: tire.model[0]});
+      const { make, model, resolution } = await search.searchModel({
+        make: tire.brand[0],
+        model: tire.model[0],
+      });
 
-      if (["skip", "fail"].includes(resolution)){
+      if (["skip", "fail"].includes(resolution)) {
         console.log("Skipping tire with no model:", tire.product_id[0]);
-        continue
+        continue;
       }
 
       const sklad1Qty = parseInt(tire.sklad1?.[0] || "0", 10);
@@ -215,18 +220,23 @@ export async function compileTiresToFile(
 
       // Build additional description based on stocks
       let stockDescription = "";
+      const stockLines: string[] = [];
+
       if (hasKrasnodarStock) {
-        stockDescription += `Доступно на складах Краснодар Склад 1, Краснодар Склад 2, Краснодар Склад 3 (Всего: ${krasnodarSum} шт.). `;
+        stockLines.push(
+          `Краснодар: на складах ${krasnodarSum} шт. Доставка 2-3 дня.`
+        );
       }
+
       if (hasStavropolStock) {
-        stockDescription += `Также доступно на складе г.Ставрополь, пр. Кулакова 18 (${sklad5Qty} шт.).`;
+        stockLines.push(`Ставрополь: в наличии ${sklad5Qty} шт.`);
       }
 
-      // Only include stockDescription if there's relevant stock
-      if (stockDescription) {
-        stockDescription = `\n${stockDescription}`;
+      if (stockLines.length > 0) {
+        stockDescription = `\nНаличие на складах:\n` + stockLines.join("\n");
       }
 
+      // Optionally, skip the tire if there's no stock in either location
       if (!hasKrasnodarStock && !hasStavropolStock) {
         console.log("Skipping tire with no stock:", tire.product_id[0]);
         continue;
@@ -264,11 +274,11 @@ export async function compileTiresToFile(
         Quantity: "за 1 шт.",
         Condition: "Новое",
         Images: {
-          Image: ( await getImageUrls(tire.product_id[0])).map((p) => ({
+          Image: (await getImageUrls(tire.product_id[0])).map((p) => ({
             $: {
               url: p,
-            }
-          }))
+            },
+          })),
         },
         Price: calculatePrice(tire.price[0]),
       });
