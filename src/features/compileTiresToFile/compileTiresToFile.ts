@@ -246,7 +246,7 @@ export async function compileTiresToFile(
         Id: tire.product_id[0],
         Address: "Ставропольский край, Ставрополь, Шпаковская ул., 115",
         Category: "Запчасти и аксессуары",
-        Description: `⭐ ⭐ ⭐ ⭐ ⭐ \nЛучшая ${tire.brand[0]} ${tire.size[0]} ${model} Арт. ${tire.artikul[0]} купить в Ставрополе ${tire.season[0]} ${tire.thorn[0]}${stockDescription}`,
+        Description: `⭐ ⭐ ⭐ ⭐ ⭐ \n Шины ${tire.season[0]} ${tire.thorn[0]} ${tire.brand[0]} ${tire.size[0]} ${model} \n Арт. ${tire.artikul[0]} \n ${stockDescription} \n `,
         GoodsType: "Шины, диски и колёса",
         AdType: "Товар от производителя",
         ProductType: "Легковые шины",
