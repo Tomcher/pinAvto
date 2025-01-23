@@ -256,19 +256,17 @@ export async function compileTiresToFile(
         RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
         TireAspectRatio: cleanUpAspectRatio(tire.height[0]),
         TireType: (() => {
-          if (tire.thorn[0] === "Шипованная") {
-            return "Зимние шипованные";
-          } else if (tire.thorn[0] === "Нешипованная") {
-            return "Зимние нешипованные";
-          } else {
-            switch (tire.season[0]) {
-              case "Всесезонная":
-                return "Всесезонные";
-              case "Летняя":
-                return "Летние";
-              default:
-                return tire.season[0];
-            }
+          switch (tire.season[0]) {
+            case "Зимняя":
+              return tire.thorn[0] === "Шипованная"
+                ? "Зимние шипованные"
+                : "Зимние нешипованные";
+            case "Летняя":
+              return "Летние";
+            case "Всесезонная":
+              return "Всесезонные";
+            default:
+              return tire.season[0];
           }
         })(),
         Quantity: "за 1 шт.",
