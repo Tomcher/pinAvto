@@ -45,7 +45,7 @@ interface Ad {
     Image: {
       $: {
         url: string;
-      }
+      };
     };
   }[];
 }
@@ -74,9 +74,9 @@ export async function isFileAvailable(url: string): Promise<boolean> {
     });
 
     // If the response is within the range 200–299 or 206 (Partial Content), the file exists
-    const found =  response.status === 200 || response.status === 206;
-    if (found) console.log('found image: ', url)
-    return found
+    const found = response.status === 200 || response.status === 206;
+    if (found) console.log("found image: ", url);
+    return found;
   } catch (error) {
     console.error("Error checking file availability:", error);
     return false;
@@ -202,29 +202,27 @@ export async function compileTiresToFile(
         RimDiameter: tire.diameter[0].match(/\d+/g)?.join("") || "",
         TireAspectRatio: tire.height[0],
         TireType: (() => {
-          if (tire.thorn[0] === "Шипованная") {
-            return "Зимние шипованные";
-          } else if (tire.thorn[0] === "Нешипованная") {
-            return "Зимние нешипованные";
-          } else {
-            switch (tire.season[0]) {
-              case "Всесезонная":
-                return "Всесезонные";
-              case "Летняя":
-                return "Летние";
-              default:
-                return tire.season[0];
-            }
+          switch (tire.season[0]) {
+            case "Зимняя":
+              return tire.thorn[0] === "Шипованная"
+                ? "Зимние шипованные"
+                : "Зимние нешипованные";
+            case "Летняя":
+              return "Летние";
+            case "Всесезонная":
+              return "Всесезонные";
+            default:
+              return tire.season[0];
           }
         })(),
         Quantity: "за 1 шт.",
         Condition: "Новое",
-        Images: ( await getImageUrls(tire.product_id[0])).map((p) => ({
+        Images: (await getImageUrls(tire.product_id[0])).map((p) => ({
           Image: {
             $: {
               url: p,
-            }
-          }
+            },
+          },
         })),
       });
     }
