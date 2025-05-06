@@ -25,6 +25,15 @@ jobs:
       - uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+      - name: Copy docker-compose.yml via SCP
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ vars.DEPLOY_HOST }}
+          username: ${{ vars.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
+          source: "docker-compose.yml"
+          target: "/home/${{ vars.DEPLOY_USER }}/pinavto/"
       - name: Deploy to Remote Server using SSH
         env:
           HOST: ${{ vars.DEPLOY_HOST }}
