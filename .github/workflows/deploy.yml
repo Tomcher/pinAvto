@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
           source: "docker-compose.yml"
-          target: "/home/${{ vars.DEPLOY_USER }}/pinavto/"
+          target: "/${{ vars.DEPLOY_USER }}"
       - name: Deploy to Remote Server using SSH
         env:
           HOST: ${{ vars.DEPLOY_HOST }}
